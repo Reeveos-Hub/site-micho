@@ -13,6 +13,7 @@ const About = lazy(() => import('./pages/About'))
 const Collection = lazy(() => import('./pages/Collection'))
 const Reservations = lazy(() => import('./pages/Reservations'))
 const Sitemap = lazy(() => import('./pages/Sitemap'))
+const LocalLandingPage = lazy(() => import('./pages/LocalLandingPage'))
 
 function PageFallback() {
   return (
@@ -38,7 +39,23 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/collection" element={<Collection />} />
               <Route path="/reservations" element={<Reservations />} />
-              <Route path="/sitemap" element={<Sitemap />} />
+               <Route path="/sitemap" element={<Sitemap />} />
+               <Route path="/turkish-restaurant-broomhill-sheffield" element={<LocalLandingPage slug="broomhill" />} />
+               <Route path="/turkish-restaurant-sheffield-city-centre" element={<LocalLandingPage slug="city-centre" />} />
+               <Route path="/turkish-restaurant-crookesmoor" element={<LocalLandingPage slug="crookesmoor" />} />
+               <Route path="/turkish-restaurant-ecclesall-sheffield" element={<LocalLandingPage slug="ecclesall" />} />
+               <Route path="/turkish-restaurant-fulwood-sheffield" element={<LocalLandingPage slug="fulwood" />} />
+               <Route path="/turkish-restaurant-greystones-sheffield" element={<LocalLandingPage slug="greystones" />} />
+               <Route path="/turkish-restaurant-heeley-sheffield" element={<LocalLandingPage slug="heeley" />} />
+               <Route path="/turkish-restaurant-hillsborough-sheffield" element={<LocalLandingPage slug="hillsborough" />} />
+               <Route path="/turkish-restaurant-hunters-bar-sheffield" element={<LocalLandingPage slug="hunters-bar" />} />
+               <Route path="/turkish-restaurant-kelham-island-sheffield" element={<LocalLandingPage slug="kelham-island" />} />
+               <Route path="/turkish-restaurant-london-road-sheffield" element={<LocalLandingPage slug="london-road" />} />
+               <Route path="/turkish-restaurant-nether-edge-sheffield" element={<LocalLandingPage slug="nether-edge" />} />
+               <Route path="/turkish-restaurant-ranmoor-sheffield" element={<LocalLandingPage slug="ranmoor" />} />
+               <Route path="/turkish-restaurant-sharrow-sheffield" element={<LocalLandingPage slug="sharrow" />} />
+               <Route path="/turkish-restaurant-walkley-sheffield" element={<LocalLandingPage slug="walkley" />} />
+               <Route path="/turkish-restaurant-woodseats-sheffield" element={<LocalLandingPage slug="woodseats" />} />
           </Routes>
         </Suspense>
       </AnimatePresence>
