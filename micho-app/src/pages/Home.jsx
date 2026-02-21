@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import BookingPrompt from '../components/BookingPrompt'
 
 // Reliable Unsplash images with auto format
-const HERO_IMG = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80'
 const IMG_GRILL = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80'
 const IMG_FOOD1 = 'https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80'
 const IMG_FOOD2 = 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80'
@@ -141,7 +140,6 @@ export default function Home() {
               loop
               playsInline
               className="w-full h-full object-cover"
-              poster={HERO_IMG}
             >
               <source src="/hero.mp4" type="video/mp4" />
             </video>
