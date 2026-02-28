@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import SEO from '../components/SEO'
 import { neighbourhoods, neighbourhoodBySlug } from '../data/neighbourhoods'
 
-const BASE_URL = 'https://micho-restaurant.vercel.app'
+const BASE_URL = 'https://michoturkishbargrill.co.uk'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },

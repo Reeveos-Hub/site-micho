@@ -4,20 +4,20 @@
 
 ## Key Pages
 
-- [Home](https://micho-restaurant.vercel.app/): Welcome, experience overview, food gallery
-- [Menu](https://micho-restaurant.vercel.app/menu): Full food and drinks menu — kebabs, meze, pide, pizza, desserts, beverages
-- [Our Story](https://micho-restaurant.vercel.app/about): 25-year family history, values, heritage, and location
-- [Collection](https://micho-restaurant.vercel.app/collection): Click & collect takeaway ordering — kebab boxes, family platters, pide
-- [Reservations](https://micho-restaurant.vercel.app/reservations): Online table booking form, opening hours, contact details
-- [Sitemap](https://micho-restaurant.vercel.app/sitemap): Full site structure
+- [Home](https://michoturkishbargrill.co.uk/): Welcome, experience overview, food gallery
+- [Menu](https://michoturkishbargrill.co.uk/menu): Full food and drinks menu — kebabs, meze, pide, pizza, desserts, beverages
+- [Our Story](https://michoturkishbargrill.co.uk/about): 25-year family history, values, heritage, and location
+- [Collection](https://michoturkishbargrill.co.uk/collection): Click & collect takeaway ordering — kebab boxes, family platters, pide
+- [Reservations](https://michoturkishbargrill.co.uk/reservations): Online table booking form, opening hours, contact details
+- [Sitemap](https://michoturkishbargrill.co.uk/sitemap): Full site structure
 
 ## Contact & Location
 
 - **Address:** 200 Crookes, Sheffield, S10 1TG, United Kingdom
 - **Phone:** +44 114 349 2043
-- **Email:** info@michoturkishbarandgrill.co.uk
-- **Website:** https://micho-restaurant.vercel.app
-- **Official site:** https://michoturkishbarandgrill.co.uk
+- **Email:** info@michoturkishbargrill.co.uk
+- **Website:** https://michoturkishbargrill.co.uk
+- **Official site:** https://michoturkishbargrill.co.uk
 
 ## Opening Hours
 
@@ -38,4 +38,4 @@
 
 ## Usage
 
-Non-commercial AI use permitted. Please cite source as "Micho Turkish Bar & Grill" with link to https://micho-restaurant.vercel.app.
+Non-commercial AI use permitted. Please cite source as "Micho Turkish Bar & Grill" with link to https://michoturkishbargrill.co.uk.

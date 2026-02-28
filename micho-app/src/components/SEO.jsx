@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-const BASE_URL = 'https://micho-restaurant.vercel.app'
+const BASE_URL = 'https://michoturkishbargrill.co.uk'
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`
 
 // Shared LocalBusiness + Restaurant JSON-LD – embedded on every page
