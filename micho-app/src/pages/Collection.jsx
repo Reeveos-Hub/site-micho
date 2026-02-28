@@ -53,7 +53,7 @@ const collectionMenu = [
 const faqs = [
   {
     q: 'How do I place a collection order?',
-    a: 'Call us on +44 114 349 2043 or email info@michoturkishbarandgrill.co.uk. We ask for at least 30 minutes notice for most orders, and 2 hours notice for family sharing platters.',
+    a: 'Call us on +44 114 349 2043 or email info@michoturkishbargrill.co.uk. We ask for at least 30 minutes notice for most orders, and 2 hours notice for family sharing platters.',
   },
   {
     q: 'What are your collection hours?',
@@ -284,7 +284,7 @@ export default function Collection() {
             <a href="tel:+441143492043" className="btn-copper inline-block">
               +44 114 349 2043
             </a>
-            <a href="mailto:info@michoturkishbarandgrill.co.uk" className="btn-outline inline-block">
+            <a href="mailto:info@michoturkishbargrill.co.uk" className="btn-outline inline-block">
               Email Us
             </a>
           </div>

@@ -251,7 +251,7 @@ export default function About() {
             <div className="flex flex-col gap-3 text-text-muted font-sans text-base mb-12">
               <p>200 Crookes, Sheffield, S10 1TG</p>
               <p><a href="tel:+441143492043" className="hover:text-accent-copper transition-colors duration-300">+44 114 349 2043</a></p>
-              <p><a href="mailto:info@michoturkishbarandgrill.co.uk" className="hover:text-accent-copper transition-colors duration-300">info@michoturkishbarandgrill.co.uk</a></p>
+              <p><a href="mailto:info@michoturkishbargrill.co.uk" className="hover:text-accent-copper transition-colors duration-300">info@michoturkishbargrill.co.uk</a></p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/reservations" className="btn-copper inline-block">Book a Table</Link>

@@ -11,8 +11,8 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com/michoturkishbarandgrill' },
-  { label: 'Facebook', href: 'https://facebook.com/michoturkishbarandgrill' },
+  { label: 'Instagram', href: 'https://instagram.com/michoturkishbargrill' },
+  { label: 'Facebook', href: 'https://facebook.com/michoturkishbargrill' },
 ]
 
 export default function Footer() {
@@ -72,10 +72,10 @@ export default function Footer() {
                 +44 114 349 2043
               </a>
               <a
-                href="mailto:info@michoturkishbarandgrill.co.uk"
+                href="mailto:info@michoturkishbargrill.co.uk"
                 className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors duration-200"
               >
-                info@michoturkishbarandgrill.co.uk
+                info@michoturkishbargrill.co.uk
               </a>
               <div className="flex gap-5 mt-2">
                 {socialLinks.map((s) => (

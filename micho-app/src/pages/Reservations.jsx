@@ -382,10 +382,10 @@ export default function Reservations() {
                   <div>
                     <p className="font-semibold text-text-primary mb-1">Email</p>
                     <a
-                      href="mailto:info@michoturkishbarandgrill.co.uk"
+                      href="mailto:info@michoturkishbargrill.co.uk"
                       className="hover:text-accent-copper transition-colors break-all"
                     >
-                      info@michoturkishbarandgrill.co.uk
+                      info@michoturkishbargrill.co.uk
                     </a>
                   </div>
                 </div>

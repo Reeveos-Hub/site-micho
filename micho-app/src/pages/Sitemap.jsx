@@ -35,8 +35,8 @@ const sections = [
     items: [
       { label: 'Address', value: '200 Crookes, Sheffield, S10 1TG' },
       { label: 'Phone', value: '+44 114 349 2043', href: 'tel:+441143492043' },
-      { label: 'Email', value: 'info@michoturkishbarandgrill.co.uk', href: 'mailto:info@michoturkishbarandgrill.co.uk' },
-      { label: 'Official Website', value: 'michoturkishbarandgrill.co.uk', href: 'https://michoturkishbarandgrill.co.uk' },
+      { label: 'Email', value: 'info@michoturkishbargrill.co.uk', href: 'mailto:info@michoturkishbargrill.co.uk' },
+      { label: 'Official Website', value: 'michoturkishbargrill.co.uk', href: 'https://michoturkishbargrill.co.uk' },
     ],
   },
 ]

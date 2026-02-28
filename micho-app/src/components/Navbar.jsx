@@ -12,9 +12,9 @@ const navLinks = [
 ]
 
 const connectLinks = [
-  { label: 'Contact Us', to: 'mailto:info@michoturkishbarandgrill.co.uk', external: true },
-  { label: 'Instagram', to: 'https://instagram.com/michoturkishbarandgrill', external: true },
-  { label: 'Facebook', to: 'https://facebook.com/michoturkishbarandgrill', external: true },
+  { label: 'Contact Us', to: 'mailto:info@michoturkishbargrill.co.uk', external: true },
+  { label: 'Instagram', to: 'https://instagram.com/michoturkishbargrill', external: true },
+  { label: 'Facebook', to: 'https://facebook.com/michoturkishbargrill', external: true },
   { label: '+44 114 349 2043', to: 'tel:+441143492043', external: true },
 ]
 

@@ -16,7 +16,7 @@ const localBusinessSchema = {
   description:
     'Authentic Turkish Bar & Grill in Sheffield. Charcoal-grilled meats, fresh meze, and 25 years of culinary heritage. Family-run since 1999.',
   telephone: '+441143492043',
-  email: 'info@michoturkishbarandgrill.co.uk',
+  email: 'info@michoturkishbargrill.co.uk',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '200 Crookes',
@@ -39,9 +39,9 @@ const localBusinessSchema = {
   priceRange: '££',
   hasMap: 'https://maps.google.com/?q=200+Crookes+Sheffield+S10+1TG',
   sameAs: [
-    'https://instagram.com/michoturkishbarandgrill',
-    'https://facebook.com/michoturkishbarandgrill',
-    'https://michoturkishbarandgrill.co.uk',
+    'https://instagram.com/michoturkishbargrill',
+    'https://facebook.com/michoturkishbargrill',
+    'https://michoturkishbargrill.co.uk',
   ],
 }
 

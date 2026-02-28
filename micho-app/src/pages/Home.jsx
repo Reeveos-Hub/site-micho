@@ -472,7 +472,7 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="section-label">@michoturkishbarandgrill</p>
+          <p className="section-label">@michoturkishbargrill</p>
         </motion.div>
 
         <motion.div
@@ -485,7 +485,7 @@ export default function Home() {
           {[IMG_IG1, IMG_IG2, IMG_IG3, IMG_IG4, IMG_IG5, IMG_IG6].map((src, i) => (
             <motion.a
               key={i}
-              href="https://instagram.com/michoturkishbarandgrill"
+              href="https://instagram.com/michoturkishbargrill"
               target="_blank"
               rel="noopener noreferrer"
               className="relative overflow-hidden group block"
