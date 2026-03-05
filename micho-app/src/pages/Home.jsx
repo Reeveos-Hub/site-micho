@@ -236,41 +236,65 @@ export default function Home() {
       <MarqueeStrip />
 
       {/* ─── WELCOME ─── */}
-      <section className="py-40 px-6 flex items-center justify-center overflow-hidden">
-        <div className="max-w-[720px] mx-auto text-center">
-          <motion.p
-            className="section-label"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            Welcome
-          </motion.p>
+      <section className="py-28 md:py-40 px-6 md:px-12 overflow-hidden">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
 
-          <div className="mb-10">
-            <AnimatedHeadline
-              text="Where fire meets tradition"
-              className="font-serif font-light text-text-primary leading-tight"
-              delay={0.1}
-            />
-            <style>{`.animated-headline { font-size: clamp(38px, 6vw, 68px); }`}</style>
+          {/* LEFT — text */}
+          <div>
+            <motion.p
+              className="section-label"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              Welcome
+            </motion.p>
+
+            <div className="mb-10">
+              <AnimatedHeadline
+                text="Where fire meets tradition"
+                className="font-serif font-light text-text-primary leading-tight"
+                delay={0.1}
+              />
+              <style>{`.animated-headline { font-size: clamp(38px, 6vw, 68px); }`}</style>
+            </div>
+
+            {['Nestled in Sheffield\'s Crookes neighbourhood, Micho has been serving authentic Turkish cuisine for over 25 years. Born from a deep love of Turkish culinary heritage, every dish we prepare carries the warmth of a family kitchen and the precision of a lifetime\'s craft.',
+              'We believe food is the greatest connector of people. Our charcoal grill never rests, our meze comes fresh from the kitchen daily, and every guest is welcomed as family. This is not just dinner — this is an experience passed down through generations.'
+            ].map((text, i) => (
+              <motion.p
+                key={i}
+                className="font-sans text-text-muted text-base md:text-lg leading-relaxed mb-6"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-60px' }}
+                transition={{ duration: 1, delay: 0.2 + i * 0.2, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {text}
+              </motion.p>
+            ))}
           </div>
 
-          {['Nestled in Sheffield\'s Crookes neighbourhood, Micho has been serving authentic Turkish cuisine for over 25 years. Born from a deep love of Turkish culinary heritage, every dish we prepare carries the warmth of a family kitchen and the precision of a lifetime\'s craft.',
-            'We believe food is the greatest connector of people. Our charcoal grill never rests, our meze comes fresh from the kitchen daily, and every guest is welcomed as family. This is not just dinner — this is an experience passed down through generations.'
-          ].map((text, i) => (
-            <motion.p
-              key={i}
-              className="font-sans text-text-muted text-base md:text-lg leading-relaxed mb-6"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 1, delay: 0.2 + i * 0.2, ease: [0.22, 1, 0.36, 1] }}
-            >
-              {text}
-            </motion.p>
-          ))}
+          {/* RIGHT — chefs photo */}
+          <motion.div
+            className="relative overflow-hidden rounded-sm"
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <img
+              src="/chefs.png"
+              alt="Micho chefs with their dishes"
+              className="w-full h-full object-cover object-top"
+              style={{ maxHeight: '620px' }}
+              loading="lazy"
+            />
+            {/* subtle bottom fade to blend with background */}
+            <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to bottom, transparent 70%, rgba(15,14,12,0.4) 100%)' }} />
+          </motion.div>
+
         </div>
       </section>
 
