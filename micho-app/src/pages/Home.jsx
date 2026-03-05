@@ -419,87 +419,79 @@ export default function Home() {
       {/* ─── FOOD GALLERY ─── */}
       <section className="px-4 md:px-8 pb-24">
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+          className="flex flex-col gap-3 md:gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
         >
-          {/* Large landscape */}
-          <motion.div
-            className="col-span-2 overflow-hidden relative group"
-            style={{ aspectRatio: '16/9' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src={IMG_FOOD1} alt="Turkish food" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </motion.div>
+          {/* ROW 1: 3 equal columns */}
+          <div className="grid grid-cols-3 gap-3 md:gap-4">
+            {[
+              { src: IMG_FOOD1, alt: 'Turkish meze platter' },
+              { src: IMG_FOOD2, alt: 'Grilled meats' },
+              { src: IMG_FOOD3, alt: 'Turkish cuisine' },
+            ].map(({ src, alt }, i) => (
+              <motion.div
+                key={i}
+                className="overflow-hidden relative group"
+                style={{ aspectRatio: '4/3' }}
+                variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } } }}
+              >
+                <img src={src} alt={alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+              </motion.div>
+            ))}
+          </div>
 
-          {/* Portrait */}
-          <motion.div
-            className="overflow-hidden relative group"
-            style={{ aspectRatio: '4/5' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src={IMG_FOOD2} alt="Meze platter" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-          </motion.div>
+          {/* ROW 2: wide (2/3) + square (1/3) */}
+          <div className="grid grid-cols-3 gap-3 md:gap-4">
+            <motion.div
+              className="col-span-2 overflow-hidden relative group"
+              style={{ aspectRatio: '16/9' }}
+              variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } } }}
+            >
+              <img src={IMG_FOOD4} alt="Turkish cuisine spread" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+            </motion.div>
+            <motion.div
+              className="overflow-hidden relative group"
+              style={{ aspectRatio: '16/9' }}
+              variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] } } }}
+            >
+              <img src="/food-kofte.png" alt="Köfte in cast iron skillet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+            </motion.div>
+          </div>
 
-          {/* Square */}
-          <motion.div
-            className="overflow-hidden relative group"
-            style={{ aspectRatio: '1/1' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src={IMG_FOOD3} alt="Grilled pide" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-          </motion.div>
+          {/* ROW 3: square (1/3) + wide (2/3) */}
+          <div className="grid grid-cols-3 gap-3 md:gap-4">
+            <motion.div
+              className="overflow-hidden relative group"
+              style={{ aspectRatio: '16/9' }}
+              variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } } }}
+            >
+              <img src="/food-chicken.png" alt="Chicken shish with rice" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+            </motion.div>
+            <motion.div
+              className="col-span-2 overflow-hidden relative group"
+              style={{ aspectRatio: '16/9' }}
+              variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] } } }}
+            >
+              <img src="/food-pide.png" alt="Turkish pide on wooden board" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+            </motion.div>
+          </div>
 
-          {/* Wide cinematic */}
+          {/* ROW 4: lamb chops full width */}
           <motion.div
-            className="col-span-2 overflow-hidden relative group"
-            style={{ aspectRatio: '21/9' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] } } }}
+            className="overflow-hidden relative group w-full"
+            style={{ aspectRatio: '21/7' }}
+            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } } }}
           >
-            <img src={IMG_FOOD4} alt="Turkish cuisine spread" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-          </motion.div>
-
-          {/* ── NEW ADDITIONS ── */}
-
-          {/* Row 3: Pide wide (2 cols) + Kofte square (1 col) + Chicken square (1 col) */}
-          <motion.div
-            className="col-span-2 overflow-hidden relative group"
-            style={{ aspectRatio: '16/9' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src="/food-pide.png" alt="Turkish pide on wooden board" className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </motion.div>
-
-          <motion.div
-            className="overflow-hidden relative group"
-            style={{ aspectRatio: '1/1' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src="/food-kofte.png" alt="Köfte in cast iron skillet" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </motion.div>
-
-          <motion.div
-            className="overflow-hidden relative group"
-            style={{ aspectRatio: '1/1' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src="/food-chicken.png" alt="Chicken shish with rice and salad" className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          </motion.div>
-
-          {/* Row 4: Lamb chops full width */}
-          <motion.div
-            className="col-span-2 md:col-span-4 overflow-hidden relative group"
-            style={{ aspectRatio: '21/9' }}
-            variants={{ hidden: { opacity: 0, scale: 0.92, y: 40 }, visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] } } }}
-          >
-            <img src="/food-lamb.png" alt="Lamb chops with bulgur and salad" className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-110" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <img src="/food-lamb.png" alt="Lamb chops with bulgur and salad" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
           </motion.div>
 
         </motion.div>
