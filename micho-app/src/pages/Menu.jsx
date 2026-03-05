@@ -28,11 +28,12 @@ function MenuItem({ item, index }) {
       transition={{ duration: 0.5, delay: Math.min(index * 0.03, 0.18), ease: [0.25, 0.46, 0.45, 0.94] }}
       style={{ willChange: 'transform, opacity' }}
     >
-      <div className="flex-1 min-w-0">
-        <div className="flex items-baseline flex-wrap gap-1">
-          <span className="font-sans font-medium text-text-primary text-base">{item.name}</span>
-          {item.tags?.map((tag) => <DietaryBadge key={tag} tag={tag} />)}
-        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-baseline flex-wrap gap-1">
+            {item.num && <span className="font-sans text-text-muted text-sm mr-1 flex-shrink-0">{item.num}.</span>}
+            <span className="font-sans font-medium text-text-primary text-base">{item.name}</span>
+            {item.tags?.map((tag) => <DietaryBadge key={tag} tag={tag} />)}
+          </div>
         {item.description && (
           <p className="font-sans text-text-muted text-sm mt-1 leading-relaxed">{item.description}</p>
         )}

@@ -22,3 +22,11 @@
 2026-02-18T20:42:46.001Z [console][debug] [vite] hot updated: /src/index.css
 2026-02-18T20:43:14.490Z [console][debug] [vite] hot updated: /src/index.css
 2026-02-18T20:43:24.704Z [console][debug] [vite] hot updated: /src/index.css
+2026-03-05T18:04:30.625Z [console][error] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+2026-03-05T18:04:30.625Z [console][error] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+2026-03-05T18:04:30.938Z [console][error] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+2026-03-05T18:09:23.264Z [console][error] [LaunchDarkly] Config option "application.version" must only contain letters, numbers, ., _ or -.
+2026-03-05T18:09:25.070Z [console][error] [LaunchDarkly] Error on stream connection: {"isTrusted":true}, will continue retrying after 912 milliseconds.
+2026-03-05T18:09:25.767Z [console][error] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+2026-03-05T18:09:25.767Z [console][error] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+2026-03-05T18:09:48.979Z [console][error] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
