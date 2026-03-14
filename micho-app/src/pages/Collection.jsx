@@ -32,6 +32,10 @@ const faqs = [
     a: 'Yes — we encourage it. When you call, simply tell us when you\'d like to collect and we\'ll have everything freshly prepared and ready.',
   },
   {
+    q: 'Is your food Halal?',
+    a: 'Yes — all our meat is Halal sourced. We are committed to serving food that meets Halal standards for our community.',
+  },
+  {
     q: 'Are allergen details available?',
     a: 'Absolutely. Please inform us of any allergies or dietary requirements when ordering. Full allergen information is available on request.',
   },
@@ -202,6 +206,10 @@ export default function Collection() {
             <span className="font-sans text-xs text-text-muted flex items-center gap-2">
               <span className="border border-accent-copper/40 text-accent-copper px-1.5 py-0.5 text-xs font-semibold">GF</span>
               Gluten Free
+            </span>
+            <span className="font-sans text-xs text-text-muted flex items-center gap-2">
+              <img src="/halal-badge.png" alt="Halal" className="h-5 w-5 object-contain" style={{ filter: 'grayscale(1) brightness(3)', mixBlendMode: 'screen' }} />
+              All meat is Halal
             </span>
           </div>
 

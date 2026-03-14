@@ -214,7 +214,7 @@ export default function Menu() {
 
       {/* Dietary key */}
       <motion.div
-        className="max-w-screen-md mx-auto px-6 py-6 flex gap-6"
+        className="max-w-screen-md mx-auto px-6 py-6 flex flex-wrap gap-4 sm:gap-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.6 }}
@@ -230,6 +230,10 @@ export default function Menu() {
         <span className="font-sans text-xs text-text-muted flex items-center gap-2">
           <span className="border border-accent-copper/40 text-accent-copper px-1.5 py-0.5 text-xs font-semibold">GF</span>
           Gluten Free
+        </span>
+        <span className="font-sans text-xs text-text-muted flex items-center gap-2">
+          <img src="/halal-badge.png" alt="Halal" className="h-5 w-5 object-contain" style={{ filter: 'grayscale(1) brightness(3)', mixBlendMode: 'screen' }} />
+          All meat is Halal
         </span>
       </motion.div>
 

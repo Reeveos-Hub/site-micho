@@ -41,6 +41,15 @@ export default function Footer() {
               Authentic Turkish Bar &amp; Grill<br />
               200 Crookes, Sheffield, S10 1TG
             </p>
+            <div className="flex items-center gap-3 mt-5">
+              <img
+                src="/halal-badge.png"
+                alt="Halal Certified"
+                className="h-8 w-8 object-contain"
+                style={{ filter: 'grayscale(1) brightness(3)', mixBlendMode: 'screen' }}
+              />
+              <span className="font-sans text-text-muted text-xs">All our meat is Halal</span>
+            </div>
           </div>
 
           {/* Links */}
