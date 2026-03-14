@@ -150,8 +150,14 @@ export default function Footer() {
             <p className="font-sans text-xs text-text-muted/50">
               © {new Date().getFullYear()} Micho Turkish Bar &amp; Grill. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
               <span className="font-sans text-xs text-text-muted/50">Sheffield, South Yorkshire</span>
+              <Link
+                to="/privacy"
+                className="font-sans text-xs text-text-muted/50 hover:text-accent-copper transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
               <Link
                 to="/sitemap"
                 className="font-sans text-xs text-text-muted/50 hover:text-accent-copper transition-colors duration-200"

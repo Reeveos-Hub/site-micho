@@ -189,7 +189,7 @@ export default function Collection() {
                 <ScrollReveal key={item.step} direction="up" distance={70} delay={i * 0.15} duration={1.1}>
                   <motion.div className="flex flex-col" whileHover={{ y: -8 }} transition={{ duration: 0.35 }}>
                     <motion.span
-                      className="font-serif text-accent-copper/30 text-7xl leading-none mb-4"
+                      className="font-serif text-accent-copper/30 text-5xl md:text-7xl leading-none mb-4"
                       initial={{ opacity: 0, scale: 0.5 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
@@ -208,7 +208,7 @@ export default function Collection() {
 
       {/* Feature images strip */}
       <motion.section
-        className="grid grid-cols-3 gap-1"
+        className="grid grid-cols-1 sm:grid-cols-3 gap-1"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}

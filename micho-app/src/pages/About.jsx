@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
 import BookingPrompt from '../components/BookingPrompt'
 
-const IMG_HERO     = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80'
+const IMG_HERO     = '/micho-interior.png'
 const IMG_STORY1   = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80'
 const IMG_STORY2   = 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80'
-const IMG_INTERIOR = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80'
+const IMG_INTERIOR = '/micho-interior.png'
 
 const values = [
   { label: 'Authenticity', text: 'Every recipe is rooted in Turkish culinary tradition. We source ingredients that honour the flavours of Anatolia — from hand-selected spices to the wood that fuels our charcoal grill.' },
@@ -17,13 +17,7 @@ const values = [
   { label: 'Community',    text: "Rooted in Sheffield's Crookes neighbourhood, we are proud to be part of the fabric of this city. Our guests are our community — and community is why we cook." },
 ]
 
-const timeline = [
-  { year: '1999', event: "Micho opens on Crookes, Sheffield. A small kitchen, a charcoal grill, and a family's dream." },
-  { year: '2005', event: "Word of mouth grows. The dining room expands to welcome Sheffield's growing appetite for authentic Turkish cuisine." },
-  { year: '2012', event: 'Second-generation family members join the kitchen, bringing new energy while preserving every beloved recipe.' },
-  { year: '2018', event: 'Full bar added, and the menu evolves — new desserts, fresh cocktails, and a refined dining experience.' },
-  { year: '2024', event: 'Micho enters its 25th year. The charcoal still glows. The family still cooks. The welcome never changes.' },
-]
+
 
 function ParallaxHero({ src }) {
   const ref = useRef(null)
@@ -118,7 +112,7 @@ export default function About() {
             style={{ minHeight: '480px', objectFit: 'cover', display: 'block' }}
           />
         </ScrollReveal>
-        <div className="flex flex-col justify-center px-12 py-20" style={{ background: '#1A1816' }}>
+        <div className="flex flex-col justify-center px-6 md:px-12 py-14 md:py-20" style={{ background: '#1A1816' }}>
           <ScrollReveal direction="right" distance={60} duration={1.2}>
             <p className="section-label">The Craft</p>
             <h2 className="font-serif font-light text-text-primary text-4xl md:text-5xl mb-8 leading-tight">
@@ -136,7 +130,7 @@ export default function About() {
 
       {/* Two-column: text left, image right */}
       <section className="grid md:grid-cols-2 gap-0">
-        <div className="flex flex-col justify-center px-12 py-20 order-2 md:order-1" style={{ background: '#221F1B' }}>
+        <div className="flex flex-col justify-center px-6 md:px-12 py-14 md:py-20 order-2 md:order-1" style={{ background: '#221F1B' }}>
           <ScrollReveal direction="left" distance={60} duration={1.2}>
             <p className="section-label">The Heritage</p>
             <h2 className="font-serif font-light text-text-primary text-4xl md:text-5xl mb-8 leading-tight">
@@ -194,50 +188,6 @@ export default function About() {
                 </motion.div>
               </ScrollReveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-24 px-6" style={{ background: '#1A1816' }}>
-        <div className="max-w-screen-md mx-auto">
-          <ScrollReveal direction="up" distance={60} duration={1.1}>
-            <div className="text-center mb-20">
-              <p className="section-label">25 Years</p>
-              <h2 className="font-serif font-light text-text-primary text-5xl md:text-6xl">Our journey</h2>
-            </div>
-          </ScrollReveal>
-          <div className="relative">
-            <motion.div
-              className="absolute left-8 top-0 w-px"
-              style={{ background: 'linear-gradient(to bottom, transparent, rgba(196,122,59,0.4), transparent)', originY: 0 }}
-              initial={{ scaleY: 0 }}
-              whileInView={{ scaleY: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
-            />
-            <div className="flex flex-col gap-14">
-              {timeline.map((item, i) => (
-                <ScrollReveal key={item.year} direction="right" distance={70} delay={i * 0.13} duration={1.1}>
-                  <div className="flex gap-8 items-start pl-0">
-                    <div className="flex-shrink-0 w-16 flex flex-col items-center">
-                      <motion.div
-                        className="w-3.5 h-3.5 rounded-full mt-1.5"
-                        style={{ background: '#C47A3B', marginLeft: '26px' }}
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4 + i * 0.13, duration: 0.5, type: 'spring', stiffness: 300 }}
-                      />
-                    </div>
-                    <div className="flex-1" style={{ marginLeft: '-8px' }}>
-                      <p className="font-serif text-accent-copper text-2xl mb-2">{item.year}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{item.event}</p>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
           </div>
         </div>
       </section>
