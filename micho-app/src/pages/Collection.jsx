@@ -148,6 +148,20 @@ export default function Collection() {
       {/* Hero */}
       <CollectionHero />
 
+      {/* 15% off promo banner */}
+      <section className="py-8 px-6" style={{ background: 'linear-gradient(135deg, rgba(196,122,59,0.15) 0%, rgba(196,122,59,0.05) 100%)', borderTop: '1px solid rgba(196,122,59,0.25)', borderBottom: '1px solid rgba(196,122,59,0.25)' }}>
+        <div className="max-w-screen-md mx-auto text-center">
+          <ScrollReveal direction="up" distance={30} duration={0.8}>
+            <p className="font-serif font-light text-text-primary text-2xl md:text-3xl mb-2">
+              <span className="text-accent-copper">15% off</span> all collection orders
+            </p>
+            <p className="font-sans text-text-muted text-sm">
+              Order by phone or email and collect in person to enjoy 15% off your entire order.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="py-24 px-6" style={{ background: '#1A1816' }}>
         <div className="max-w-screen-lg mx-auto">
@@ -289,9 +303,12 @@ export default function Collection() {
       <section className="py-20 px-6 text-center" style={{ background: '#1A1816' }}>
         <ScrollReveal>
           <p className="section-label">Ready to Order?</p>
-          <h2 className="font-serif font-light text-text-primary text-4xl md:text-5xl mb-8">
+          <h2 className="font-serif font-light text-text-primary text-4xl md:text-5xl mb-4">
             Give us a call
           </h2>
+          <p className="font-serif italic text-accent-copper text-xl mb-8">
+            15% off all collection orders
+          </p>
           <p className="font-sans text-text-muted text-base mb-10">
             Mon, Wed–Thu 4pm–11pm &nbsp;·&nbsp; Fri–Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
           </p>
