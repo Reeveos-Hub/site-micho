@@ -45,8 +45,7 @@ export default function Footer() {
               <img
                 src="/halal-badge.png"
                 alt="Halal Certified"
-                className="h-8 w-8 object-contain"
-                style={{ filter: 'grayscale(1) brightness(3)', mixBlendMode: 'screen' }}
+                className="h-8 w-8 object-contain rounded-full"
               />
               <span className="font-sans text-text-muted text-xs">All our meat is Halal</span>
             </div>

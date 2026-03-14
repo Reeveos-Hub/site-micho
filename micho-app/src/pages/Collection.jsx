@@ -208,7 +208,7 @@ export default function Collection() {
               Gluten Free
             </span>
             <span className="font-sans text-xs text-text-muted flex items-center gap-2">
-              <img src="/halal-badge.png" alt="Halal" className="h-5 w-5 object-contain" style={{ filter: 'grayscale(1) brightness(3)', mixBlendMode: 'screen' }} />
+              <img src="/halal-badge.png" alt="Halal" className="h-5 w-5 object-contain rounded-full" />
               All meat is Halal
             </span>
           </div>
