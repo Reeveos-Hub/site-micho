@@ -8,7 +8,7 @@ import BookingPrompt from '../components/BookingPrompt'
 const IMG_HERO     = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80'
 const IMG_STORY1   = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80'
 const IMG_STORY2   = 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80'
-const IMG_INTERIOR = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80'
+const IMG_INTERIOR = '/interior-dining.png'
 
 const values = [
   { label: 'Authenticity', text: 'Every recipe is rooted in Turkish culinary tradition. We source ingredients that honour the flavours of Anatolia — from hand-selected spices to the wood that fuels our charcoal grill.' },
