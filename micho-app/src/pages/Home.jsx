@@ -8,7 +8,6 @@ import BookingPrompt from '../components/BookingPrompt'
 const IMG_GRILL = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80'
 const IMG_FOOD1 = 'https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80'
 const IMG_FOOD2 = 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80'
-const IMG_FOOD3 = 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80'
 const IMG_FOOD4 = 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80'
 const IMG_IG1 = 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=75'
 const IMG_IG2 = 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=75'
@@ -444,7 +443,7 @@ export default function Home() {
               {[
                 { src: IMG_FOOD1,              alt: 'Turkish meze',           col: '1',         row: '1' },
                 { src: IMG_FOOD2,              alt: 'Grilled meats',          col: '2',         row: '1' },
-                { src: IMG_FOOD3,              alt: 'Turkish cuisine',        col: '3',         row: '1' },
+                { src: '/food-baklava.png',    alt: 'Pistachio baklava with cream',  col: '3',  row: '1' },
                 { src: IMG_FOOD4,              alt: 'Turkish cuisine spread', col: '1 / span 2',row: '2' },
                 { src: '/food-kofte.png',      alt: 'Köfte in cast iron',     col: '3',         row: '2' },
                 { src: '/food-salad.jpg',      alt: 'Pomegranate salad',      col: '1',         row: '3' },
