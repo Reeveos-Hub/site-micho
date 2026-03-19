@@ -89,7 +89,7 @@ export default function About() {
               "We didn't open a restaurant. We opened our home — and invited the whole of Sheffield in."
             </p>
           </ScrollReveal>
-          {['Micho Turkish Bar & Grill has been part of Sheffield\'s Crookes neighbourhood since 1999. What began as a small family venture — a charcoal grill, a handful of recipes passed down through generations, and an unwavering belief in the power of a shared meal — has grown into one of the city\'s most beloved dining destinations.',
+          {['Micho Turkish Bar & Grill is here to be part of the Crookes community. A family venture built around a charcoal grill, a handful of recipes passed down through generations, and an unwavering belief in the power of a shared meal — growing into one of Sheffield\'s most beloved dining destinations.',
             'Every dish that leaves our kitchen carries the weight of that original promise: to cook honestly, to serve generously, and to make every guest feel like they\'ve come home.'
           ].map((text, i) => (
             <ScrollReveal key={i} direction="up" distance={50} delay={0.1 + i * 0.15} duration={1.1}>

@@ -14,7 +14,7 @@ const localBusinessSchema = {
   logo: `${BASE_URL}/favicon.svg`,
   image: DEFAULT_IMAGE,
   description:
-    'Authentic Turkish Bar & Grill in Sheffield. Charcoal-grilled meats, fresh meze, and 25 years of culinary heritage. Family-run since 1999.',
+    'Authentic Turkish Bar & Grill in Sheffield. Charcoal-grilled meats, fresh meze, and 25 years of culinary heritage. Over 25 years of culinary expertise. Family-run in Crookes, Sheffield.',
   telephone: '+441143492043',
   email: 'info@michoturkishbargrill.co.uk',
   address: {

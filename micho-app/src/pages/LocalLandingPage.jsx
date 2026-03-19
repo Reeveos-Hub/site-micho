@@ -23,7 +23,7 @@ export default function LocalLandingPage({ slug }) {
 
   const canonicalPath = area.path
   const title = `Turkish Restaurant in ${area.name}, Sheffield | Micho Turkish Bar & Grill`
-  const description = `Looking for Turkish food near ${area.name}? Micho Turkish Bar & Grill in Crookes is just ${area.distance} away. Charcoal-grilled kebabs, fresh pide, mezze & halal options. Family-run since 1999.`
+  const description = `Looking for Turkish food near ${area.name}? Micho Turkish Bar & Grill in Crookes is just ${area.distance} away. Charcoal-grilled kebabs, fresh pide, mezze & halal options. Over 25 years of Turkish culinary expertise.`
 
   // Extra JSON-LD for this page
   const serviceSchema = {
@@ -203,7 +203,7 @@ export default function LocalLandingPage({ slug }) {
                 { label: 'Address', value: '200 Crookes, S10 1TG' },
                 { label: 'Phone', value: '0114 349 2043' },
                 { label: 'Halal', value: 'Full menu, certified' },
-                { label: 'Family-run', value: 'Since 1999' },
+                { label: 'Experience', value: 'Over 25 years' },
               ].map((item) => (
                 <div key={item.label}>
                   <p className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-accent-copper mb-1">

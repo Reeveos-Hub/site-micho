@@ -19,7 +19,7 @@ export const neighbourhoods = [
     body2:
       'Our mixed grill platters are made for groups, and every dish is cooked to order over charcoal—none of that reheated-under-a-lamp nonsense. We do halal meats throughout the menu, and the meze selection means even confirmed meat-avoiders find plenty to love. Students get the same warm welcome as anyone else.',
     body3:
-      'After a long day on campus or a wander round Broomhill\'s shops, come straight up Crookes Road and let us feed you properly. We\'ve been doing this since 1999—you\'re in safe hands.',
+      'After a long day on campus or a wander round Broomhill\'s shops, come straight up Crookes Road and let us feed you properly. Over 25 years of experience—you\'re in safe hands.',
     parking: 'Street parking is available on Crookes High Street and the surrounding roads.',
   },
   {
@@ -37,7 +37,7 @@ export const neighbourhoods = [
     body2:
       'Micho has become a word-of-mouth favourite for city centre workers, students at Sheffield Hallam, and anyone who lives in the S1-S3 postcodes and fancies something with genuine character. We do big sharing platters for groups, quiet tables for two, and everything in between. Full halal menu throughout.',
     body3:
-      'The city centre has plenty of choice—we\'re not going to pretend otherwise. But for Turkish food made the traditional way, in a family-run restaurant that\'s been feeding Sheffield since 1999, the short bus ride north is absolutely worth it.',
+      'The city centre has plenty of choice—we\'re not going to pretend otherwise. But for Turkish food made the traditional way, in a family-run restaurant backed by over 25 years of culinary experience, the short bus ride north is absolutely worth it.',
     parking: 'If you\'re driving from the city centre, there\'s street parking on Crookes High Street and on neighbouring roads off Crookes.',
   },
   {
@@ -73,7 +73,7 @@ export const neighbourhoods = [
     body2:
       'Ecclesall locals tend to be particular about their food, which suits us fine. Our menu is built around quality: halal-certified meats from local suppliers, meze made in-house, and a drinks list that includes proper Turkish tea and a solid range of beers and wines. Nothing is frozen or pre-made.',
     body3:
-      'If you\'ve already tried everything on Ecclesall Road and want a change of scene, come to Crookes. Family-run since 1999, 25 years of feeding Sheffield properly.',
+      'If you\'ve already tried everything on Ecclesall Road and want a change of scene, come to Crookes. Family-run, with over 25 years of experience feeding people properly.',
     parking: 'There\'s street parking directly on Crookes High Street and on adjacent roads off Crookes Road.',
   },
   {
@@ -199,7 +199,7 @@ export const neighbourhoods = [
     body2:
       'We share a philosophy with the best London Road restaurants: quality ingredients, cooked properly, no shortcuts. Our lamb comes from local halal suppliers. Our bread is made in-house. The meze changes with the seasons. If you care about where your food comes from, you\'ll feel at home at Micho.',
     body3:
-      'From London Road to Crookes: one bus, 15 minutes, great Turkish food. Family-run since 1999, fully halal throughout.',
+      'From London Road to Crookes: one bus, 15 minutes, great Turkish food. Family-run, fully halal throughout.',
     parking: 'If driving from London Road, street parking is available on Crookes High Street and adjacent roads.',
   },
   {
@@ -215,7 +215,7 @@ export const neighbourhoods = [
     body1:
       'From Nether Edge, head via Hunter\'s Bar roundabout and through Broomhill—it\'s a pleasant route, around 14 minutes by car. By bus, catch the 83 from the Nether Edge area towards Broomhill, then either walk up Crookes Road (10 minutes) or hop on the 52.',
     body2:
-      'Nether Edge food lovers appreciate authenticity, and that\'s exactly what Micho offers. Our recipes haven\'t changed because they don\'t need to. The same Adana kebab, the same slow-cooked lamb, the same house meze that\'s been on the menu since we opened in 1999. Everything is halal and freshly prepared.',
+      'Nether Edge food lovers appreciate authenticity, and that\'s exactly what Micho offers. Our recipes haven\'t changed because they don\'t need to. The same Adana kebab, the same slow-cooked lamb, the same house meze that\'s been on the menu since day one. Everything is halal and freshly prepared.',
     body3:
       'From Abbeydale Road to Crookes High Street—different part of Sheffield, same commitment to proper food. Come and eat well.',
     parking: 'Street parking on Crookes High Street available most evenings.',
@@ -283,7 +283,7 @@ export const neighbourhoods = [
     bus: 'the 83 bus from Woodseats towards Broomhill, then the 52 to Crookes',
     landmark: 'up from Woodseats Road\'s shops and Beauchief Abbey area',
     intro:
-      'Woodseats sits in the south of Sheffield, a solid 20 minutes from Crookes—but Micho is exactly the kind of restaurant that makes a longer journey worthwhile. Authentic Turkish grill, family-run since 1999, and consistently one of the most-recommended restaurants in Sheffield.',
+      'Woodseats sits in the south of Sheffield, a solid 20 minutes from Crookes—but Micho is exactly the kind of restaurant that makes a longer journey worthwhile. Authentic Turkish grill, family-run, and consistently one of the most-recommended restaurants in Sheffield.',
     body1:
       'From Woodseats Road, head north via the A61 towards the city centre, then pick up Crookes Road heading west. By bus, take the 83 towards Broomhill and connect to the 52 from there. It\'s around 20 minutes either way—comfortable, and very much worth it.',
     body2:

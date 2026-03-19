@@ -90,7 +90,7 @@ function AnimatedHeadline({ text, className, delay = 0 }) {
 
 // Horizontal marquee strip
 function MarqueeStrip() {
-  const items = ['Charcoal Grilled', '•', 'Fresh Daily', '•', 'Sheffield Since 1999', '•', 'Authentic Turkish', '•', 'Family Kitchen', '•', 'Open Flame', '•']
+  const items = ['Charcoal Grilled', '•', 'Fresh Daily', '•', '25 Years Experience', '•', 'Authentic Turkish', '•', 'Family Kitchen', '•', 'Open Flame', '•']
   const doubled = [...items, ...items]
   return (
     <div className="w-full overflow-hidden py-5 border-y" style={{ borderColor: 'rgba(196,122,59,0.15)', background: 'rgba(196,122,59,0.04)' }}>
