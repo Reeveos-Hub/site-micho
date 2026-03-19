@@ -17,6 +17,7 @@ const sections = [
   {
     title: 'Information',
     links: [
+      { label: 'Privacy Policy', path: '/privacy', description: 'How we collect, use, and protect your data' },
       { label: 'Sitemap', path: '/sitemap', description: 'Full site structure and page index' },
     ],
   },

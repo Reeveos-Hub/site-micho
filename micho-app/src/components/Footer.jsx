@@ -41,6 +41,14 @@ export default function Footer() {
               Authentic Turkish Bar &amp; Grill<br />
               200 Crookes, Sheffield, S10 1TG
             </p>
+            <div className="flex items-center gap-3 mt-5">
+              <img
+                src="/halal-badge.png"
+                alt="Halal Certified"
+                className="h-8 w-8 object-contain rounded-full"
+              />
+              <span className="font-sans text-text-muted text-xs">All our meat is Halal</span>
+            </div>
           </div>
 
           {/* Links */}
@@ -150,8 +158,14 @@ export default function Footer() {
             <p className="font-sans text-xs text-text-muted/50">
               © {new Date().getFullYear()} Micho Turkish Bar &amp; Grill. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
               <span className="font-sans text-xs text-text-muted/50">Sheffield, South Yorkshire</span>
+              <Link
+                to="/privacy"
+                className="font-sans text-xs text-text-muted/50 hover:text-accent-copper transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
               <Link
                 to="/sitemap"
                 className="font-sans text-xs text-text-muted/50 hover:text-accent-copper transition-colors duration-200"

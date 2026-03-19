@@ -6,6 +6,7 @@ import BottomCTA from './components/BottomCTA'
 import FloatingDecorations from './components/FloatingDecorations'
 import PromoBanner from './components/PromoBanner'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 
 const Home = lazy(() => import('./pages/Home'))
 const Menu = lazy(() => import('./pages/Menu'))
@@ -14,6 +15,8 @@ const Collection = lazy(() => import('./pages/Collection'))
 const Reservations = lazy(() => import('./pages/Reservations'))
 const Sitemap = lazy(() => import('./pages/Sitemap'))
 const LocalLandingPage = lazy(() => import('./pages/LocalLandingPage'))
+const NotFound = lazy(() => import('./pages/NotFound'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 
 function PageFallback() {
   return (
@@ -65,11 +68,14 @@ export default function App() {
                <Route path="/turkish-restaurant-sharrow-sheffield" element={<LocalLandingPage slug="sharrow" />} />
                <Route path="/turkish-restaurant-walkley-sheffield" element={<LocalLandingPage slug="walkley" />} />
                <Route path="/turkish-restaurant-woodseats-sheffield" element={<LocalLandingPage slug="woodseats" />} />
+               <Route path="/privacy" element={<PrivacyPolicy />} />
+               <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </AnimatePresence>
       <Footer />
       <BottomCTA />
+      <CookieBanner />
     </div>
   )
 }
