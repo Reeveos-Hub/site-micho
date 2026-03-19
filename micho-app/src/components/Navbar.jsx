@@ -44,7 +44,7 @@ function NavOverlay({ isOpen, onClose }) {
           {/* Close button */}
           <div className="flex justify-between items-center px-8 py-6">
             <Link to="/" onClick={onClose}>
-              <span className="font-serif text-2xl font-light text-text-primary tracking-widest">MICHO</span>
+              <img src="/micho-logo-t.png" alt="Micho Turkish Bar & Grill" className="h-10 w-auto" />
             </Link>
             <button
               onClick={onClose}
@@ -187,8 +187,8 @@ export default function Navbar() {
       >
         <div className="max-w-screen-xl mx-auto px-6 py-5 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-serif text-2xl font-light text-text-primary hover:text-accent-copper transition-colors duration-300 tracking-widest">
-            MICHO
+          <Link to="/">
+            <img src="/micho-logo-t.png" alt="Micho Turkish Bar & Grill" className="h-10 w-auto transition-opacity duration-300 hover:opacity-80" />
           </Link>
 
           {/* Desktop nav links */}

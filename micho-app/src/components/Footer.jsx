@@ -30,9 +30,9 @@ export default function Footer() {
           <div>
             <Link
               to="/"
-              className="font-serif text-3xl font-light text-text-primary tracking-widest hover:text-accent-copper transition-colors duration-300 block mb-4"
+              className="block mb-4"
             >
-              MICHO
+              <img src="/micho-logo-t.png" alt="Micho Turkish Bar & Grill" className="h-12 w-auto transition-opacity duration-300 hover:opacity-80" />
             </Link>
             <p className="font-serif italic text-text-muted text-sm mb-6">
               A family table open to everyone

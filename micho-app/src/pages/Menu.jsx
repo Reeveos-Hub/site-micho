@@ -11,7 +11,7 @@ function DietaryBadge({ tag }) {
   return (
     <span
       className="inline-flex items-center px-1.5 py-0.5 text-xs font-sans font-semibold border border-accent-copper/40 text-accent-copper ml-2 leading-none"
-      title={tag === 'VG' ? 'Vegan' : 'Vegetarian'}
+      title={tag === 'VG' ? 'Vegan' : tag === 'GF' ? 'Gluten Free' : 'Vegetarian'}
     >
       {tag}
     </span>
@@ -226,6 +226,10 @@ export default function Menu() {
         <span className="font-sans text-xs text-text-muted flex items-center gap-2">
           <span className="border border-accent-copper/40 text-accent-copper px-1.5 py-0.5 text-xs font-semibold">VG</span>
           Vegan
+        </span>
+        <span className="font-sans text-xs text-text-muted flex items-center gap-2">
+          <span className="border border-accent-copper/40 text-accent-copper px-1.5 py-0.5 text-xs font-semibold">GF</span>
+          Gluten Free
         </span>
       </motion.div>
 

@@ -178,7 +178,7 @@ export default function Home() {
             <div className="overflow-hidden mb-4">
               <motion.h1
                 className="font-serif font-light text-text-primary leading-none"
-                style={{ fontSize: 'clamp(80px, 18vw, 200px)', letterSpacing: '0.06em' }}
+                style={{ fontSize: 'clamp(80px, 18vw, 200px)', letterSpacing: '0.06em', fontFamily: "'Montserrat', sans-serif", fontWeight: 300 }}
                 initial={{ y: '100%', opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
