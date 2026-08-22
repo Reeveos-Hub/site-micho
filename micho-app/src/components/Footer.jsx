@@ -123,7 +123,8 @@ export default function Footer() {
                   { d: 'Mon', h: '4pm–11pm' },
                   { d: 'Tue', h: 'Closed' },
                   { d: 'Wed–Thu', h: '4pm–11pm' },
-                  { d: 'Fri–Sat', h: '12pm–11pm' },
+                  { d: 'Fri', h: '4pm–11pm' },
+                  { d: 'Sat', h: '12pm–11pm' },
                   { d: 'Sun', h: '12pm–9pm' },
                 ].map((row) => (
                 <div key={row.d} className="flex items-center gap-3">

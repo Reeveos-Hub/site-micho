@@ -1,7 +1,25 @@
 import React, { useEffect } from 'react'
-import SEO from '../components/SEO'
+import SEO, { BASE_URL } from '../components/SEO'
 
 const BOOKING_URL = 'https://web.dojo.app/create_booking/vendor/IMRbX5h6TDitS4ia5XT3HxTvOdSiYmbC-xwiQb1-icM_restaurant'
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ReservationAction',
+  name: 'Book a Table at Micho Turkish Bar & Grill',
+  target: {
+    '@type': 'EntryPoint',
+    urlTemplate: BOOKING_URL,
+    actionPlatform: [
+      'https://schema.org/DesktopWebPlatform',
+      'https://schema.org/MobileWebPlatform',
+    ],
+  },
+  object: {
+    '@type': 'FoodEstablishmentReservation',
+    provider: { '@id': `${BASE_URL}/#restaurant` },
+  },
+}
 
 export default function Reservations() {
   useEffect(() => {
@@ -14,6 +32,7 @@ export default function Reservations() {
         title="Reservations | Micho Turkish Bar & Grill Sheffield"
         description="Book a table at Micho Turkish Bar & Grill in Sheffield. Reserve online or call +44 114 349 2043. Authentic Turkish dining in Crookes, Sheffield."
         canonical="/reservations"
+        pageSchema={pageSchema}
       />
       <div
         className="min-h-screen flex flex-col items-center justify-center px-6"

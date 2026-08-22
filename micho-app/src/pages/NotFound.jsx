@@ -9,7 +9,7 @@ export default function NotFound() {
       <SEO
         title="Page Not Found | Micho Turkish Bar & Grill"
         description="The page you're looking for doesn't exist. Return to Micho Turkish Bar & Grill."
-        canonical="https://michoturkishbarandgrill.co.uk/404"
+        noindex={true}
       />
 
       <main className="min-h-screen bg-bg-primary flex items-center justify-center px-6">

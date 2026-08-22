@@ -15,6 +15,8 @@ const Collection = lazy(() => import('./pages/Collection'))
 const Reservations = lazy(() => import('./pages/Reservations'))
 const Sitemap = lazy(() => import('./pages/Sitemap'))
 const LocalLandingPage = lazy(() => import('./pages/LocalLandingPage'))
+const Journal = lazy(() => import('./pages/Journal'))
+const JournalPost = lazy(() => import('./pages/JournalPost'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 
@@ -68,6 +70,8 @@ export default function App() {
                <Route path="/turkish-restaurant-sharrow-sheffield" element={<LocalLandingPage slug="sharrow" />} />
                <Route path="/turkish-restaurant-walkley-sheffield" element={<LocalLandingPage slug="walkley" />} />
                <Route path="/turkish-restaurant-woodseats-sheffield" element={<LocalLandingPage slug="woodseats" />} />
+               <Route path="/journal" element={<Journal />} />
+               <Route path="/journal/:slug" element={<JournalPost />} />
                <Route path="/privacy" element={<PrivacyPolicy />} />
                <Route path="*" element={<NotFound />} />
           </Routes>

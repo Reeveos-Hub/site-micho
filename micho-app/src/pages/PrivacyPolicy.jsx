@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import SEO from '../components/SEO'
 
 const BUSINESS_NAME = 'Micho Turkish Bar & Grill'
-const BUSINESS_EMAIL = 'info@michoturkishbarandgrill.co.uk'
-const BUSINESS_ADDRESS = '229 Fulwood Road, Sheffield, S10 3BA'
+const BUSINESS_EMAIL = 'info@michoturkishbargrill.co.uk'
+const BUSINESS_ADDRESS = '200 Crookes, Sheffield, S10 1TG'
 const LAST_UPDATED = '14 March 2026'
 
 const sections = [
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy | Micho Turkish Bar & Grill"
         description="How Micho Turkish Bar & Grill collects, uses, and protects your personal data."
-        canonical="https://michoturkishbarandgrill.co.uk/privacy"
+        canonical="/privacy"
       />
 
       <main className="min-h-screen bg-bg-primary pt-32 pb-24 px-6">

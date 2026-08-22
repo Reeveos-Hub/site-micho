@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import SEO from '../components/SEO'
+import SEO, { BASE_URL } from '../components/SEO'
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
 import BookingPrompt from '../components/BookingPrompt'
@@ -13,8 +13,8 @@ const IMG_INTERIOR = '/micho-interior.png'
 const values = [
   { label: 'Authenticity', text: 'Every recipe is rooted in Turkish culinary tradition. We source ingredients that honour the flavours of Anatolia — from hand-selected spices to the wood that fuels our charcoal grill.' },
   { label: 'Family',       text: "Micho was born from a family's love of cooking and sharing. That spirit lives in every dish — generous portions, warm service, and a table that always has room for one more." },
-  { label: 'Craft',        text: 'Over 25 years of honing techniques passed down through generations. Our köfte is hand-shaped, our börek is hand-rolled, and our grill is tended with the care it deserves.' },
-  { label: 'Community',    text: "Having successfully run restaurants in London and Sheffield over the past 25 years, Micho has found a new home in the heart of the Crookes community — and we're here for another success story. Our guests are our community, and community is why we cook." },
+  { label: 'Craft',        text: 'Micho, our chef, has spent over 25 years honing his craft in professional kitchens. Our köfte is hand-shaped, our börek is hand-rolled, and the grill is tended with the care that experience demands.' },
+  { label: 'Community',    text: "Micho opened in the heart of the Crookes community in November 2025, and we intend to be here for a long time. Our guests are our community, and community is why we cook." },
 ]
 
 
@@ -64,6 +64,16 @@ function ParallaxHero({ src }) {
   )
 }
 
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': `${BASE_URL}/about`,
+  name: 'Our Story | Micho Turkish Bar & Grill',
+  url: `${BASE_URL}/about`,
+  about: { '@id': `${BASE_URL}/#restaurant` },
+  description: 'A family restaurant rooted in Anatolian tradition, craft, and community. Micho the chef brings twenty-five years of culinary expertise to Crookes, Sheffield.',
+}
+
 export default function About() {
   return (
     <motion.main
@@ -75,8 +85,9 @@ export default function About() {
     >
       <SEO
           title="Our Story | Micho Turkish Bar &amp; Grill Sheffield"
-          description="25 years of authentic Turkish cuisine in Sheffield. Discover the story behind Micho — a family restaurant rooted in Anatolian tradition, craft, and community."
+          description="Discover the story behind Micho — a family restaurant in Crookes, Sheffield, rooted in Anatolian tradition and built on Micho the chef's twenty-five years of culinary expertise."
           canonical="/about"
+          pageSchema={aboutPageSchema}
         />
 
       <ParallaxHero src={IMG_HERO} />

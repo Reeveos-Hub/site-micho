@@ -81,19 +81,6 @@ export const menuData = {
     ],
   },
 
-  // ─── PIZZA ────────────────────────────────────────────────────────────────
-  'Pizza': {
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1400&q=80',
-    note: 'All pizzas made with fresh dough, mozzarella and signature Micho-style flavour',
-    items: [
-      { num: 48, name: 'Mixed Meat Feast',                         price: 14.50, description: 'Classic tomato sauce, pastrami, sucuk, minced beef, grilled chicken and double mozzarella' },
-      { num: 49, name: 'White Pizza with Spinach, Artichokes & Roasted Garlic', price: 11.50, tags: ['V'], description: 'Creamy white base topped with fresh spinach, tender artichokes and roasted garlic' },
-      { num: 50, name: 'Micho Four Cheese Pizza',                  price: 11.50, tags: ['V'], description: 'Classic tomato base with mozzarella, gorgonzola, parmesan and cheddar' },
-      { num: 51, name: 'Vegetarian Pizza',                         price: 11.50, tags: ['V'], description: 'Green and red peppers, mushrooms, onions, artichokes and mozzarella cheese' },
-      { num: 52, name: 'Soguk Meze Pizza',                         price: 12.95, description: 'Prawns, tuna, cherry tomatoes and fresh mozzarella with garden greens for a refreshing Mediterranean balance' },
-    ],
-  },
-
   // ─── SIDES ────────────────────────────────────────────────────────────────
   'Sides': {
     image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80',

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import SEO from '../components/SEO'
+import SEO, { BASE_URL } from '../components/SEO'
 import { menuData, categories } from '../data/menuData'
 import BookingPrompt from '../components/BookingPrompt'
 import ScrollReveal from '../components/ScrollReveal'
@@ -136,6 +136,16 @@ function ParallaxHero() {
   )
 }
 
+const menuSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Menu',
+  '@id': `${BASE_URL}/menu#menu`,
+  name: 'Micho Full Menu',
+  url: `${BASE_URL}/menu`,
+  inLanguage: 'en-GB',
+  hasMenuSection: categories.map(name => ({ '@type': 'MenuSection', name })),
+}
+
 export default function Menu() {
   const [activeCategory, setActiveCategory] = useState(categories[0])
   const tabsRef = useRef(null)
@@ -178,8 +188,9 @@ export default function Menu() {
     >
       <SEO
           title="Menu | Micho Turkish Bar &amp; Grill Sheffield"
-          description="Explore Micho's full menu: charcoal-grilled kebabs, fresh meze, pide, pizza, desserts and drinks. Premium ingredients, traditional Turkish recipes."
+          description="Explore Micho's full menu: charcoal-grilled kebabs, fresh meze, pide, sides, desserts and drinks. Premium ingredients, traditional Turkish recipes."
           canonical="/menu"
+          pageSchema={menuSchema}
         />
 
       <ParallaxHero />

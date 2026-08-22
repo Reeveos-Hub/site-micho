@@ -17,11 +17,11 @@ const foodCategories = categories.filter(cat => !drinkCategories.includes(cat))
 const faqs = [
   {
     q: 'How do I place a collection order?',
-    a: 'Call us on +44 114 349 2043 or email info@michoturkishbargrill.co.uk. We ask for at least 30 minutes notice for most orders, and 2 hours notice for family sharing platters.',
+    a: 'Call us on +44 114 349 2043. We ask for at least 30 minutes notice for most orders, and 2 hours notice for family sharing platters.',
   },
   {
     q: 'What are your collection hours?',
-    a: 'Collection is available during all our opening hours: Monday, Wednesday–Thursday 4pm–11pm, Friday–Saturday 12pm–11pm, Sunday 12pm–9pm. We are closed on Tuesdays.',
+    a: 'Collection is available during all our opening hours: Monday, Wednesday–Thursday 4pm–11pm, Friday 4pm–11pm, Saturday 12pm–11pm, Sunday 12pm–9pm. We are closed on Tuesdays.',
   },
   {
     q: 'Do you offer delivery?',
@@ -141,7 +141,7 @@ export default function Collection() {
     >
         <SEO
           title="Collection | Micho Turkish Bar &amp; Grill Sheffield"
-          description="Order Micho's authentic Turkish food for collection. Kebabs, meze, pide, pizza and more — freshly prepared for takeaway from Crookes, Sheffield."
+          description="Order Micho's authentic Turkish food for collection. Kebabs, meze, pide, sides and more — freshly prepared for takeaway from Crookes, Sheffield."
           canonical="/collection"
         />
 
@@ -156,7 +156,7 @@ export default function Collection() {
               <span className="text-accent-copper">15% off</span> all collection orders
             </p>
             <p className="font-sans text-text-muted text-sm">
-              Order by phone or email and collect in person to enjoy 15% off your entire order.
+              Order by phone and collect in person to enjoy 15% off your entire order.
             </p>
           </ScrollReveal>
         </div>
@@ -173,8 +173,8 @@ export default function Collection() {
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-10">
             {[
-              { step: '01', title: 'Browse & Choose', desc: 'Browse our full menu below — starters, grills, pide, pizza, sides and more. Everything on our menu is available for collection.' },
-              { step: '02', title: 'Call or Email', desc: 'Contact us on +44 114 349 2043 or email us. Let us know what you\'d like and your collection time.' },
+              { step: '01', title: 'Browse & Choose', desc: 'Browse our full menu below — starters, grills, pide, sides and more. Everything on our menu is available for collection.' },
+              { step: '02', title: 'Call to Order', desc: 'Call us on +44 114 349 2043. Let us know what you\'d like and your collection time.' },
               { step: '03', title: 'Collect Fresh', desc: 'Come to 200 Crookes, Sheffield. Your food will be freshly prepared and waiting for you.' },
             ].map((item, i) => (
               <ScrollReveal key={item.step} direction="up" distance={70} delay={i * 0.15} duration={1.1}>
@@ -310,14 +310,11 @@ export default function Collection() {
             15% off all collection orders
           </p>
           <p className="font-sans text-text-muted text-base mb-10">
-            Mon, Wed–Thu 4pm–11pm &nbsp;·&nbsp; Fri–Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
+            Mon, Wed–Thu 4pm–11pm &nbsp;·&nbsp; Fri 4pm–11pm &nbsp;·&nbsp; Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+441143492043" className="btn-copper inline-block">
               +44 114 349 2043
-            </a>
-            <a href="mailto:info@michoturkishbargrill.co.uk" className="btn-outline inline-block">
-              Email Us
             </a>
           </div>
         </ScrollReveal>

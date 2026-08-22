@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion'
-import SEO from '../components/SEO'
+import SEO, { BASE_URL } from '../components/SEO'
 import { Link } from 'react-router-dom'
 import BookingPrompt from '../components/BookingPrompt'
 
@@ -109,6 +109,53 @@ function MarqueeStrip() {
   )
 }
 
+const homePageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the opening hours at Micho Turkish Bar & Grill?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Micho is open Monday, Wednesday, Thursday and Friday from 4pm to 11pm. Saturday from 12pm to 11pm, Sunday from 12pm to 9pm. Closed on Tuesdays.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is Micho Turkish Bar & Grill?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Micho is located at 200 Crookes, Sheffield, S10 1TG — in the Crookes neighbourhood of Sheffield.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the food at Micho Halal?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. All meat served at Micho Turkish Bar & Grill is Halal certified.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I book a table at Micho?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Reservations are recommended, particularly on weekend evenings. You can book online via our reservations page or call us on +44 114 349 2043.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Micho offer collection?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Micho offers a collection service. Visit our Collection page or call +44 114 349 2043 to place an order.',
+      },
+    },
+  ],
+}
+
 export default function Home() {
   const heroRef = useRef(null)
   const { scrollYProgress: heroScroll } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
@@ -128,6 +175,7 @@ export default function Home() {
           title="Micho Turkish Bar & Grill | Authentic Turkish Dining in Sheffield"
           description="Authentic Turkish Bar & Grill in Sheffield's Crookes. Charcoal-grilled meats, fresh meze, and 25+ years of culinary heritage. Book your table today."
           canonical="/"
+          pageSchema={homePageSchema}
         />
 
         {/* ─── HERO ─── */}
@@ -259,7 +307,7 @@ export default function Home() {
               <style>{`.animated-headline { font-size: clamp(38px, 6vw, 68px); }`}</style>
             </div>
 
-            {['Nestled in Sheffield\'s Crookes neighbourhood, Micho has been serving authentic Turkish cuisine for over 25 years. Born from a deep love of Turkish culinary heritage, every dish we prepare carries the warmth of a family kitchen and the precision of a lifetime\'s craft.',
+            {['Nestled in Sheffield\'s Crookes neighbourhood, Micho Turkish Bar and Grill is named after the chef, Micho, who brings twenty-five years of culinary experience to every plate. Every dish carries the warmth of a family kitchen and the precision of a lifetime\'s craft.',
               'We believe food is the greatest connector of people. Our charcoal grill never rests, our meze comes fresh from the kitchen daily, and every guest is welcomed as family. This is not just dinner — this is an experience passed down through generations.'
             ].map((text, i) => (
               <motion.p
@@ -395,7 +443,7 @@ export default function Home() {
               {[
                 { line: 'Charcoal-grilled over open flame.', num: '01' },
                 { line: 'Freshly prepared from scratch, daily.', num: '02' },
-                { line: '25 years of Turkish culinary heritage.', num: '03' },
+                { line: 'Micho the chef. Twenty-five years of expertise behind every dish.', num: '03' },
               ].map((item, i) => (
                 <motion.div
                   key={i}

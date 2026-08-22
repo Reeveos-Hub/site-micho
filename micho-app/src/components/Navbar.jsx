@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Our Story', to: '/about' },
   { label: 'Collection', to: '/collection' },
   { label: 'Reservations', to: BOOKING_URL, external: true },
+  { label: 'Journal', to: '/journal' },
 ]
 
 const connectLinks = [
