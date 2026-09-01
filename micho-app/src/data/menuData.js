@@ -1,6 +1,8 @@
 // Full menu data for Micho Turkish Bar & Grill
-// Food items 1–71 from PDF menus + full drinks menus
+// Food items from client A4 Main Menu + A5 Dessert Menu PDFs (Sept 2026)
 // V = Vegetarian, VG = Vegan, GF = Gluten Free
+// Note: Pide V tags applied per actual ingredients (mozzarella + cheddar + butter
+// mean pide cannot be vegan even when client PDF said VG).
 
 export const menuData = {
 
@@ -8,13 +10,13 @@ export const menuData = {
   'Cold Starters': {
     image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80',
     items: [
-      { num: 1,  name: 'Cacık',           price: 5.50, tags: ['V','GF'],  description: 'Yogurt, cucumber, garlic & fresh dill' },
-      { num: 2,  name: 'Mixed Olives',    price: 3.90, tags: ['VG','GF'], description: 'Marinated assorted olives in olive oil and herbs' },
-      { num: 3,  name: 'Patlıcan Tarator',price: 5.95, tags: ['V','GF'],  description: 'Barbecued aubergine purée with yogurt, olive oil and garlic' },
-      { num: 4,  name: 'Biber Közleme',   price: 4.95, tags: ['V','GF'],  description: 'Barbecued peppers with feta cheese, olive oil and garlic' },
-      { num: 5,  name: 'Şakşuka',         price: 5.95, tags: ['VG','GF'], description: 'Aubergine, potatoes, mixed peppers, garlic, tomato sauce, herbs' },
-      { num: 6,  name: 'Hummus',          price: 5.50, tags: ['VG','GF'], description: 'Chickpea dip with tahini & lemon' },
-      { num: 7,  name: 'Çoban Salatası',  price: 5.50, tags: ['VG','GF'], description: 'Spicy tomatoes, red onions, mixed peppers, cucumber, parsley, pepper paste, herbs and pomegranate juice' },
+      { num: 1,  name: 'Cacık',            price: 6.00, tags: ['V'],  description: 'Yogurt, cucumber, garlic & fresh dill' },
+      { num: 2,  name: 'Mixed Olives',     price: 5.90, tags: ['VG'], description: 'Assorted olives marinated in olive oil and herbs' },
+      { num: 3,  name: 'Patlıcan Tarator', price: 6.50, tags: ['V'],  description: 'Barbecued aubergine puree with yogurt, olive oil and garlic' },
+      { num: 4,  name: 'Biber Közleme',    price: 6.50, tags: ['V'],  description: 'Barbecued peppers with feta cheese, olive oil and garlic' },
+      { num: 5,  name: 'Şakşuka',          price: 6.50, tags: ['VG'], description: 'Aubergine, potatoes, mixed peppers, garlic, tomato sauce, herbs' },
+      { num: 6,  name: 'Hummus',           price: 6.00, tags: ['VG'], description: 'Chickpea dip with tahini & lemon' },
+      { num: 7,  name: 'Çoban Salatası',   price: 6.00, tags: ['VG'], description: 'Spicy tomatoes, red onions, mixed peppers, cucumber, parsley, pepper paste, herbs and pomegranate juice' },
     ],
   },
 
@@ -22,19 +24,17 @@ export const menuData = {
   'Hot Starters': {
     image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1400&q=80',
     items: [
-      { num: 8,  name: 'Soup',              price: 8.50, description: 'Lentil or Chicken served with homemade bread and mixed olives' },
-      { num: 9,  name: 'Turkish Sucuk',     price: 6.50, tags: ['GF'], description: 'Grilled sucuk' },
-      { num: 10, name: 'Mantar Tava',        price: 5.50, tags: ['V','GF'],  description: 'Sautéed mushrooms cooked in butter with garlic and herbs' },
-      { num: 11, name: 'Dolma',              price: 6.50, tags: ['V'],  description: 'Dried aubergine and pepper with stuffed rice, herbs, garlic, tomatoes, pepper paste and parsley' },
-      { num: 12, name: 'İçli Köfte',         price: 7.90, description: 'Crisp golden bulgur shells filled with minced lamb, onions and aromatic spices, hand-shaped and lightly fried. A traditional Anatolian speciality' },
-      { num: 13, name: 'Halloumi',           price: 6.50, tags: ['V','GF'],  description: 'Grilled halloumi cheese served golden and crisp' },
-      { num: 14, name: 'Falafel',            price: 6.50, tags: ['VG'], description: 'Chickpea fritters' },
-      { num: 15, name: 'Sigara Börek',       price: 6.50, tags: ['V'],  description: 'Fried pastry filled with feta cheese and parsley' },
-      { num: 16, name: 'Calamari',           price: 6.50, description: 'Fried squid rings in a light crispy batter' },
-      { num: 17, name: 'Arnavut Ciğeri',     price: 6.50, tags: ['GF'], description: 'Freshly fried diced lamb\'s liver in butter' },
-      { num: 18, name: 'Mitite Köfte',       price: 5.90, tags: ['GF'], description: 'Lamb mince meatball in special tomato sauce' },
-      { num: 19, name: 'Prawn',              price: 7.90, tags: ['GF'], description: 'Fresh prawns grilled with olive oil, herbs, and lemon' },
-      { num: 20, name: '4 Piece Chicken Strips', price: 5.90, description: '' },
+      { num: 8,  name: 'Turkish Sucuk',  price: 7.00, description: 'Grilled sucuk' },
+      { num: 9,  name: 'Mantar Tava',    price: 6.50, tags: ['V'], description: 'Sautéed mushrooms cooked in butter with garlic and herbs' },
+      { num: 10, name: 'Dolma',          price: 7.50, tags: ['V'], description: 'Dried aubergine and pepper with stuffed rice, herbs, garlic, tomatoes, pepper paste and parsley' },
+      { num: 11, name: 'İçli Köfte',     price: 8.50, description: 'Crisp, golden bulgur shells filled with a savoury blend of minced lamb, onions, and aromatic spices, delicately shaped by hand and lightly fried. A traditional Anatolian speciality combining tender texture with deep, fragrant flavours.' },
+      { num: 12, name: 'Halloumi',       price: 7.00, tags: ['V'], description: 'Grilled halloumi cheese served golden and crisp' },
+      { num: 13, name: 'Falafel',        price: 7.00, tags: ['VG'], description: 'Chickpea fritters' },
+      { num: 14, name: 'Sigara Börek',   price: 6.50, tags: ['V'], description: 'Fried pastry filled with feta cheese and parsley' },
+      { num: 15, name: 'Calamari',       price: 6.50, description: 'Fried squid rings in a light crispy batter' },
+      { num: 16, name: 'Arnavut Ciğeri', price: 7.00, description: 'Freshly fried diced lamb\'s liver in butter' },
+      { num: 17, name: 'Mitite Köfte',   price: 7.90, description: 'Lamb mincemeat ball in special tomato sauce' },
+      { num: 18, name: 'Prawn',          price: 8.50, description: 'Fresh prawns grilled with olive oil, herbs, and lemon' },
     ],
   },
 
@@ -43,28 +43,28 @@ export const menuData = {
     image: '/food-lamb.png',
     note: 'All served with bulgur, grilled tomato & peppers',
     items: [
-      { num: 21, name: 'Micho Köfte',          price: 18.95, tags: ['GF'], description: 'Hand-shaped lamb mince meatballs seasoned with herbs and grilled over charcoal, served with a rich house tomato sauce' },
-      { num: 22, name: 'Lamb Şiş',              price: 19.95, tags: ['GF'], description: 'Marinated lamb cubes, delicately seasoned with Mediterranean herbs and spices, grilled to perfection' },
-      { num: 23, name: 'Lamb Chops',            price: 22.95, tags: ['GF'], description: 'Marinated lamb chops, delicately seasoned with Mediterranean herbs and spices, grilled to perfection' },
-      { num: 24, name: 'Lamb Ribs',             price: 19.50, tags: ['GF'], description: 'Lamb ribs, gently seasoned with a blend of spices' },
-      { num: 25, name: 'Adana Kebab',           price: 17.50, tags: ['GF'], description: 'Minced lamb mixed with spices and herbs' },
-      { num: 26, name: 'Chicken Şiş',           price: 17.50, tags: ['GF'], description: 'Tender chicken cubes marinated in a blend of herbs and spices' },
-      { num: 27, name: 'Chicken Wings',         price: 17.00, tags: ['GF'], description: 'Chargrilled chicken wings marinated in herbs and spices for a rich, smoky taste' },
-      { num: 28, name: 'Chicken Thighs',        price: 17.00, tags: ['GF'], description: 'Chicken thighs marinated in herbs and spices' },
-      { num: 29, name: 'Vegetable Güveç',       price: 16.00, tags: ['VG','GF'], description: 'A mix of seasonal vegetables baked slowly with herbs and olive oil' },
-      { num: 30, name: 'Lamb Güveç',            price: 18.95, tags: ['GF'], description: 'Lamb pieces cooked with vegetables, tomato sauce and herbs' },
-      { num: 31, name: 'Chicken Güveç',         price: 17.50, tags: ['GF'], description: 'Chicken and vegetables baked in a clay pot with herbs and tomato sauce' },
-      { num: 32, name: 'Micho Special',         price: 21.00, description: 'Chargrilled chicken breast served in a garlic, cream and mushroom sauce' },
-      { num: 33, name: 'Sea Bass Güveç',        price: 21.00, tags: ['GF'], description: 'Sea bass fillet baked with tomato, garlic, herbs, and olive oil' },
-      { num: 34, name: 'King Prawn Güveç',      price: 21.00, tags: ['GF'], description: 'King prawns cooked in a clay pot with tomato, garlic, and herbs' },
-      { num: 35, name: 'Mixed Grill',           price: 23.90, description: 'Lamb chop, lamb şiş, chicken şiş, adana' },
-      { num: 36, name: 'Combination Mix',       price: 20.90, description: 'Choose two of: chicken şiş, lamb şiş, adana' },
-      { num: 37, name: 'İskender',              price: 17.50, description: 'Lamb or chicken served over bread cubes with yoghurt, tomato sauce, and melted butter' },
-      { num: 38, name: 'Çitir Beyti',           price: 19.50, description: 'Minced meat wrap with yogurt & tomato sauce' },
-      { num: 39, name: 'Ali Nazik',             price: 19.50, description: 'Aubergine, yogurt, lamb or chicken' },
-      { num: 40, name: 'Çöp Şiş',              price: 19.00, tags: ['GF'], description: 'Small cubes of marinated lamb grilled on skewers, soft and full of flavour' },
-      { num: 41, name: 'Mixed Grill Combo for 2', price: 60.00, description: 'Adana, chicken şiş, lamb şiş, lamb chops, chicken wings — served with 2 meze, salad and bulgur' },
-      { num: 42, name: 'Mixed Grill Combo for 4', price: 120.00, description: 'Adana, chicken şiş, lamb şiş, lamb chops, chicken wings — served with 4 meze, salad and bulgur' },
+      { num: 19, name: 'Micho Köfte',              price: 19.95, description: 'Hand-shaped lamb mince meatballs seasoned with herbs and grilled over charcoal, served with a rich house tomato sauce' },
+      { num: 20, name: 'Lamb Şiş',                  price: 21.00, description: 'Marinated lamb cubes, delicately seasoned with Mediterranean herbs and spices, grilled to perfection' },
+      { num: 21, name: 'Lamb Chops',                price: 24.99, description: 'Marinated lamb chops, delicately seasoned with Mediterranean herbs and spices, grilled to perfection' },
+      { num: 22, name: 'Lamb Ribs',                 price: 21.00, description: 'Lamb ribs, gently seasoned with a blend of spices' },
+      { num: 23, name: 'Adana Kebab',               price: 20.50, description: 'Minced lamb mixed with spices and herbs' },
+      { num: 24, name: 'Chicken Şiş',               price: 19.50, description: 'Tender chicken cubes marinated in a blend of herbs and spices' },
+      { num: 25, name: 'Chicken Wings',             price: 19.00, description: 'Chargrilled chicken wings marinated in herbs and spices for a rich, smoky taste' },
+      { num: 26, name: 'Chicken Thighs',            price: 19.00, description: 'Chicken thighs marinated in herbs and spices' },
+      { num: 27, name: 'Vegetable Güveç',           price: 18.90, tags: ['VG'], description: 'A mix of seasonal vegetables baked slowly with herbs and olive oil' },
+      { num: 28, name: 'Lamb Güveç',                price: 20.95, description: 'Lamb pieces cooked with vegetables, tomato sauce and herbs' },
+      { num: 29, name: 'Chicken Güveç',             price: 19.50, description: 'Chicken and vegetables baked in a clay pot with herbs and tomato sauce' },
+      { num: 30, name: 'Micho Special',             price: 22.90, description: 'Chargrilled chicken breast served in a garlic, cream and mushroom sauce' },
+      { num: 31, name: 'Sea Bass Güveç',            price: 21.90, description: 'Sea bass fillet baked with tomato, garlic, herbs, and olive oil' },
+      { num: 32, name: 'King Prawn Güveç',          price: 21.90, description: 'King prawns cooked in a clay pot with tomato, garlic, and herbs' },
+      { num: 33, name: 'Mixed Grill',               price: 24.99, description: 'Lamb chop, lamb şiş, chicken şiş, adana' },
+      { num: 34, name: 'Combination Mix',           price: 23.90, description: 'Choose two of: chicken şiş, lamb şiş, adana' },
+      { num: 35, name: 'İskender',                  price: 21.50, description: 'Lamb or chicken served over bread cubes with yoghurt, tomato sauce, and melted butter' },
+      { num: 36, name: 'Çitir Beyti',               price: 20.90, description: 'Minced meat wrap with yogurt & tomato sauce' },
+      { num: 37, name: 'Ali Nazik',                 price: 21.00, description: 'Aubergine, yogurt, lamb or chicken' },
+      { num: 38, name: 'Çöp Şiş',                   price: 21.00, description: 'Small cubes of marinated lamb grilled on skewers, soft and full of flavour' },
+      { num: 39, name: 'Mixed Grill Combo for 2',   price: 65.00, description: 'Adana, chicken şiş, lamb şiş, lamb chops, chicken wings — served with 2 cold meze, salad and bulgur' },
+      { num: 40, name: 'Mixed Grill Combo for 4',   price: 125.00, description: 'Adana, chicken şiş, lamb şiş, lamb chops, chicken wings — served with 4 cold meze, salad and bulgur' },
     ],
   },
 
@@ -73,11 +73,25 @@ export const menuData = {
     image: '/food-pide.png',
     note: 'Turkish flatbread — all with mozzarella topping and herbs',
     items: [
-      { num: 43, name: 'Kuşbaşılı',             price: 13.95, description: 'Diced lamb, tomato, mixed peppers' },
-      { num: 44, name: 'Sucuklu',               price: 11.00, description: 'Turkish sausage' },
-      { num: 45, name: 'Mezopotamya',            price: 11.50, description: 'Mincemeat, red onion, mixed peppers, touch of oregano' },
-      { num: 46, name: 'Pastırma Sarayı',        price: 12.50, description: 'Goat cheese, olives, beef pastrami, sun-dried tomatoes' },
-      { num: 47, name: 'Göçmen Tavuk',           price: 12.00, description: 'Roast chicken, mushroom, red onion and Turkish peppers' },
+      { num: 41, name: 'Vegetarian Pide',      price: 14.50, tags: ['V'], description: 'Vegetarian pide topped with artichoke, mushrooms, red onion, mixed peppers and cheddar cheese, finished with butter, oregano, black pepper and garlic' },
+      { num: 42, name: 'Sucuklu',              price: 14.90, description: 'Turkish sausage' },
+      { num: 43, name: 'Mezopotamya',          price: 14.90, description: 'Mincemeat, red onion, mixed peppers, touch of oregano' },
+      { num: 44, name: 'Spinach and Egg Pide', price: 13.90, tags: ['V'], description: 'Spinach, egg, cheddar cheese, onion, butter and herbs' },
+      { num: 45, name: 'Kuşbaşılı Pide',       price: 15.50, description: 'Diced beef, cheddar cheese, tomatoes, mixed peppers, herbs' },
+      { num: 46, name: 'Four Cheese Pide',     price: 14.50, tags: ['V'], description: 'Feta, mozzarella, parmesan, cheddar cheese' },
+      { num: 47, name: 'Tomato & Garlic Pide', price: 9.90,  tags: ['V'], description: 'Tomato, garlic, cheddar cheese and Mediterranean herbs' },
+      { num: 48, name: 'Garlic Pide',          price: 9.90,  tags: ['V'], description: 'Cheese and garlic' },
+      { num: 49, name: 'Mushroom Pide',        price: 13.90, tags: ['V'], description: 'Mushrooms, cheddar cheese, onion, butter and herbs' },
+    ],
+  },
+
+  // ─── KIDS ─────────────────────────────────────────────────────────────────
+  'Kids': {
+    image: 'https://images.unsplash.com/photo-1561304054-ef974cedb9d7?auto=format&fit=crop&w=1400&q=80',
+    items: [
+      { num: 50, name: 'Chicken Shish', price: 7.50, description: '1 skewer + chips' },
+      { num: 51, name: 'Adana',         price: 7.50, description: '1 skewer + chips' },
+      { num: 52, name: 'Chicken Wings', price: 7.50, description: '5 pieces + chips' },
     ],
   },
 
@@ -85,41 +99,25 @@ export const menuData = {
   'Sides': {
     image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80',
     items: [
-      { num: 53, name: 'Chips',                     price: 3.50, tags: ['VG'], description: '' },
-      { num: 54, name: 'Chips with Feta',            price: 4.50, tags: ['V'],  description: '' },
-      { num: 55, name: 'Halloumi Fries',             price: 6.50, tags: ['V'],  description: '' },
-      { num: 56, name: 'Onion Rings',                price: 5.50, tags: ['VG'], description: '' },
-      { num: 57, name: 'Chicken Nuggets',            price: 7.00, description: '' },
-      { num: 58, name: 'Caprese Salad',              price: 6.50, tags: ['V','GF'],  description: '' },
-      { num: 59, name: 'Tomato and Feta Salad',      price: 6.50, tags: ['V','GF'],  description: '' },
-      { num: 60, name: 'Turkish Bread',              price: 3.00, tags: ['VG'], description: '' },
-      { num: 61, name: 'Bulgur',                     price: 3.95, tags: ['VG'], description: 'Tomato paste, onions, mixed peppers, garlic and herbs' },
-      { num: 62, name: 'Garlic Bread',               price: 5.50, tags: ['V'],  description: 'Garlic and cheese' },
-      { num: 63, name: 'Garlic Bread with Tomato',   price: 5.90, tags: ['VG'], description: 'Garlic, tomatoes and pesto sauce' },
-      { num: 64, name: 'Margarita',                  price: 5.00, tags: ['V'],  description: '' },
-    ],
-  },
-
-  // ─── KIDS ─────────────────────────────────────────────────────────────────
-  'Kids': {
-    image: 'https://images.unsplash.com/photo-1561304054-ef974cedb9d7?auto=format&fit=crop&w=1400&q=80',
-    note: 'All kids meals served with chips',
-    items: [
-      { num: 65, name: 'Chicken Şiş',    price: 6.50, description: '1 skewer + chips' },
-      { num: 66, name: 'Adana',          price: 6.50, description: '1 skewer + chips' },
-      { num: 67, name: 'Chicken Wings',  price: 6.50, description: '5 pieces + chips' },
-      { num: 68, name: 'Chicken Nuggets',price: 6.50, description: '5 pieces + chips' },
+      { num: 53, name: 'Chips',                price: 4.00, tags: ['VG'], description: '' },
+      { num: 54, name: 'Chips with Feta',      price: 5.99, tags: ['V'],  description: '' },
+      { num: 55, name: 'Halloumi Fries',       price: 7.50, tags: ['V'],  description: '' },
+      { num: 56, name: 'Tomato and Feta Salad',price: 8.50, tags: ['V'],  description: '' },
+      { num: 57, name: 'Turkish Bread',        price: 3.95, tags: ['VG'], description: '' },
+      { num: 58, name: 'Bulgur',               price: 4.50, tags: ['VG'], description: 'Tomato paste, onions, mixed peppers, garlic and herbs' },
     ],
   },
 
   // ─── DESSERTS ─────────────────────────────────────────────────────────────
   'Desserts': {
     image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1400&q=80',
-    note: 'All desserts prepared in our kitchen where allergens are present. Please speak to staff for details.',
+    note: 'All desserts are prepared in our kitchen where allergens are present. Please speak to a member of staff for details before ordering.',
     items: [
-      { num: 69, name: 'Homemade Sütlaç',               price: 4.95, tags: ['V'], description: 'Turkish rice pudding' },
-      { num: 70, name: 'Homemade Baklava',               price: 5.95, tags: ['V'], description: 'Traditional layered pastry' },
-      { num: 71, name: 'Chef\'s Weekly Dessert Selection', price: 5.95, tags: ['V'], description: 'A variety of homemade Turkish sweets with different favourites each week (1 portion)' },
+      { num: 59, name: 'Homemade Sütlaç',                       price: 6.95, tags: ['V'], description: 'Turkish rice pudding' },
+      { num: 60, name: 'Homemade Baklava',                       price: 7.95, tags: ['V'], description: 'Traditional layered pastry with pistachio (served with pistachio sauce and whipped cream) or walnut (served with tahini and whipped cream)' },
+      { num: 61, name: 'Chocolate Fudge Cake',                   price: 5.95, tags: ['V'], description: '' },
+      { num: 62, name: 'Lemon Pudding with Biscuit Layer',       price: 6.95, tags: ['V'], description: '' },
+      { num: 63, name: 'Nutella Chocolate Pudding with Biscuit Layer', price: 6.95, tags: ['V'], description: '' },
     ],
   },
 
