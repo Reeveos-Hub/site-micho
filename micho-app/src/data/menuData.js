@@ -238,7 +238,7 @@ export const menuData = {
       { name: 'Edinburgh Pink Gin',                                        price: 4.20, description: '25ml £4.20 · 50ml £7.80' },
       { name: 'Tanqueray Sevilla Gin',                                     price: 4.50, description: '25ml £4.50 · 50ml £8.00' },
       { name: 'Tanqueray No.10 Gin',                                       price: 4.50, description: '25ml £4.50 · 50ml £8.00' },
-      { name: 'Whitely Gin (Black Cherry, Blackberry, Blood Orange & Raspberry)', price: 4.20, description: '25ml £4.20 · 50ml £7.50' },
+      { name: 'Whitley Gin (Black Cherry, Blackberry, Blood Orange & Raspberry)', price: 4.20, description: '25ml £4.20 · 50ml £7.50' },
       // Tequila
       { name: 'Don Angel Tequila',                                         price: 3.90, description: '25ml £3.90' },
       { name: 'Casamigos Tequila',                                         price: 4.90, description: '25ml £4.90' },
