@@ -14,9 +14,9 @@ export const menuData = {
       { num: 2,  name: 'Mixed Olives',     price: 5.90, tags: ['VG'], description: 'Assorted olives marinated in olive oil and herbs' },
       { num: 3,  name: 'Patlıcan Tarator', price: 6.50, tags: ['V'],  description: 'Barbecued aubergine puree with yogurt, olive oil and garlic' },
       { num: 4,  name: 'Biber Közleme',    price: 6.50, tags: ['V'],  description: 'Barbecued peppers with feta cheese, olive oil and garlic' },
-      { num: 5,  name: 'Şakşuka',          price: 6.50, tags: ['VG'], description: 'Aubergine, potatoes, mixed peppers, garlic, tomato sauce, herbs' },
+      { num: 5,  name: 'Şakşuka',          price: 6.50, tags: ['VG'], description: 'Aubergine, mixed peppers, garlic, tomato sauce, herbs' },
       { num: 6,  name: 'Hummus',           price: 6.00, tags: ['VG'], description: 'Chickpea dip with tahini & lemon' },
-      { num: 7,  name: 'Çoban Salatası',   price: 6.00, tags: ['VG'], description: 'Spicy tomatoes, red onions, mixed peppers, cucumber, parsley, pepper paste, herbs and pomegranate juice' },
+      { num: 7,  name: 'Çoban Salatası',   price: 6.00, tags: ['VG'], description: 'Tomatoes, red onions, mixed peppers, cucumber, parsley, pepper paste, herbs and pomegranate juice' },
     ],
   },
 
@@ -24,7 +24,7 @@ export const menuData = {
   'Hot Starters': {
     image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1400&q=80',
     items: [
-      { num: 8,  name: 'Turkish Sucuk',  price: 7.00, description: 'Grilled sucuk' },
+      { num: 8,  name: 'Turkish Sucuk',  price: 7.00, description: 'Grilled Turkish sausage' },
       { num: 9,  name: 'Mantar Tava',    price: 6.50, tags: ['V'], description: 'Sautéed mushrooms cooked in butter with garlic and herbs' },
       { num: 10, name: 'Dolma',          price: 7.50, tags: ['V'], description: 'Dried aubergine and pepper with stuffed rice, herbs, garlic, tomatoes, pepper paste and parsley' },
       { num: 11, name: 'İçli Köfte',     price: 8.50, description: 'Crisp, golden bulgur shells filled with a savoury blend of minced lamb, onions, and aromatic spices, delicately shaped by hand and lightly fried. A traditional Anatolian speciality combining tender texture with deep, fragrant flavours.' },
