@@ -176,7 +176,7 @@ export default function JournalPost() {
         />
 
         {/* Compact two-column header */}
-        <div className="pt-6 pb-0" style={{ borderBottom: '1px solid rgba(196,122,59,0.1)' }}>
+        <div className="pt-32 md:pt-36 pb-0" style={{ borderBottom: '1px solid rgba(196,122,59,0.1)' }}>
           <div className="max-w-screen-xl mx-auto px-6">
 
             {/* Breadcrumbs */}
@@ -301,13 +301,6 @@ export default function JournalPost() {
               {/* Share */}
               <div className="mt-8 max-w-2xl flex items-center gap-4 flex-wrap">
                 <span className="font-sans text-xs text-text-muted uppercase tracking-widest">Share</span>
-                <a
-                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`${BASE_URL}/journal/${post.slug}`)}`}
-                  target="_blank" rel="noopener noreferrer"
-                  className="font-sans text-xs font-medium text-text-muted hover:text-accent-copper transition-colors border border-text-muted/20 hover:border-accent-copper/40 px-3 py-1.5"
-                >
-                  X / Twitter
-                </a>
                 <a
                   href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${BASE_URL}/journal/${post.slug}`)}`}
                   target="_blank" rel="noopener noreferrer"

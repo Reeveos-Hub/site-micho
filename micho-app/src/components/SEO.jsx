@@ -39,8 +39,9 @@ const localBusinessSchema = {
   priceRange: '££',
   hasMap: 'https://maps.google.com/?q=200+Crookes+Sheffield+S10+1TG',
   sameAs: [
-    'https://instagram.com/michoturkishbargrill',
-    'https://facebook.com/michoturkishbargrill',
+    'https://www.instagram.com/michoturkishbarandgrill/',
+    'https://www.facebook.com/p/Micho-Turkish-Bar-and-Grill-61582305844257/',
+    'https://www.tiktok.com/@micho.turkish.bar.grill',
   ],
 }
 

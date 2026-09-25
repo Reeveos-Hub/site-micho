@@ -13,8 +13,9 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com/michoturkishbargrill' },
-  { label: 'Facebook', href: 'https://facebook.com/michoturkishbargrill' },
+  { label: 'Instagram', href: 'https://www.instagram.com/michoturkishbarandgrill/' },
+  { label: 'Facebook', href: 'https://www.facebook.com/p/Micho-Turkish-Bar-and-Grill-61582305844257/' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@micho.turkish.bar.grill' },
 ]
 
 export default function Footer() {
@@ -173,6 +174,14 @@ export default function Footer() {
               >
                 Sitemap
               </Link>
+              <a
+                href="https://reeveconsult.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-xs text-text-muted/50 hover:text-accent-copper transition-colors duration-200"
+              >
+                Powered by Reeve Consult
+              </a>
             </div>
           </div>
       </div>
