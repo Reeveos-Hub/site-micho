@@ -145,7 +145,7 @@ export const neighbourhoods = [
     body2:
       'On match days, we\'re a popular post-game destination for Hillsborough supporters who want a proper meal rather than fast food. We can seat larger groups with a bit of notice—call ahead on match Saturdays and we\'ll sort something out. Halal meats throughout.',
     body3:
-      'Hillsborough to Crookes: one direct bus, great Turkish food at the end of it. Micho has been feeding Sheffield for 25 years—come and see what the fuss is about.',
+      'Hillsborough to Crookes: one direct bus, great Turkish food at the end of it. Our chef brings over 25 years of experience to the charcoal grill—come and see what the fuss is about.',
     parking: 'Street parking available on Crookes High Street and nearby side roads.',
   },
   {
@@ -235,7 +235,7 @@ export const neighbourhoods = [
     body2:
       'Ranmoor diners tend to come in twos and fours for a sit-down dinner—our mezze boards for sharing are exactly the right thing for that kind of evening. We also do a consistently excellent lamb shish and, on Friday evenings, a slow-cooked lamb special that sells out regularly. Worth booking ahead.',
     body3:
-      'Ten minutes from Ranmoor. Real Turkish food, family atmosphere, 25 years of Sheffield hospitality. Book or walk in—we\'ll look after you.',
+      'Ten minutes from Ranmoor. Real Turkish food, family atmosphere, and a chef with over 25 years of experience. Book or walk in—we\'ll look after you.',
     parking: 'Street parking on Crookes High Street. No issues on most evenings.',
   },
   {

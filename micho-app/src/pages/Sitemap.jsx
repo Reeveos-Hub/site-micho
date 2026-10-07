@@ -9,7 +9,7 @@ const sections = [
     links: [
       { label: 'Welcome', path: '/', description: 'Home page — our story, the experience, food gallery' },
       { label: 'Our Menu', path: '/menu', description: 'Full food & drinks menu — kebabs, meze, pide, desserts' },
-      { label: 'Our Story', path: '/about', description: '25 years of Turkish culinary heritage in Sheffield' },
+      { label: 'Our Story', path: '/about', description: 'Chef Micho\'s 25 years of Turkish culinary expertise, now in Crookes' },
       { label: 'Collection', path: '/collection', description: 'Click & collect takeaway — kebab boxes, family platters' },
       { label: 'Reservations', path: '/reservations', description: 'Book a table online or call us directly' },
     ],

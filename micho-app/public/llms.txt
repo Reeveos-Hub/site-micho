@@ -1,12 +1,12 @@
 # Micho Turkish Bar & Grill
 
-> Authentic Turkish Bar & Grill located at 200 Crookes, Sheffield, S10 1TG. Family-run since 1999, serving charcoal-grilled meats, fresh meze, pide, and traditional Anatolian cuisine. Open for dine-in, takeaway collection, and reservations.
+> Authentic Turkish Bar & Grill located at 200 Crookes, Sheffield, S10 1TG. A family restaurant in Crookes, led by chef Micho with over 25 years of culinary experience, serving charcoal-grilled meats, fresh meze, pide, and traditional Anatolian cuisine. Open for dine-in, takeaway collection, and reservations.
 
 ## Key Pages
 
 - [Home](https://michoturkishbargrill.co.uk/): Welcome, experience overview, food gallery
 - [Menu](https://michoturkishbargrill.co.uk/menu): Full food and drinks menu — kebabs, meze, pide, pizza, desserts, beverages
-- [Our Story](https://michoturkishbargrill.co.uk/about): 25-year family history, values, heritage, and location
+- [Our Story](https://michoturkishbargrill.co.uk/about): The story of chef Micho and the family restaurant, values, heritage, and location
 - [Collection](https://michoturkishbargrill.co.uk/collection): Click & collect takeaway ordering — kebab boxes, family platters, pide
 - [Reservations](https://michoturkishbargrill.co.uk/reservations): Online table booking form, opening hours, contact details
 - [Sitemap](https://michoturkishbargrill.co.uk/sitemap): Full site structure
@@ -36,7 +36,7 @@
 - Full bar with Turkish-inspired cocktails
 - Suitable for families, groups, and private dining
 - Vegan and vegetarian options available
-- 25+ years of culinary heritage
+- Chef with over 25 years of culinary experience
 
 ## Usage
 
