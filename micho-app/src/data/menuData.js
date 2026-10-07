@@ -25,7 +25,7 @@ export const menuData = {
       { group: 'Brunch Wraps', groupNote: 'Warm flatbread or Micho bread, with your choice of house salad or chips', name: 'Charcoal Chicken Wrap', price: 11.95, description: 'Charcoal-grilled chicken, lettuce, onion and Micho house sauce' },
       { name: 'Adana Wrap',                   price: 11.95, description: 'Adana kebab, onion, lettuce and house sauce' },
       { name: 'Halloumi & Avocado Wrap',      price: 10.95, tags: ['V'],  description: 'Grilled halloumi, avocado, lettuce, onion, cucumber and house chilli' },
-      { name: 'Falafel & Hummus Wrap',        price: 9.95,  tags: ['VG'], description: 'Falafel, hummus, lettuce, onion, cucumber and tahini-style dressing' },
+      { name: 'Falafel & Hummus Wrap',        price: 9.95,  tags: ['V'], description: 'Falafel, hummus, lettuce, onion, cucumber and tahini-style dressing' },
       { name: 'Daily Sandwich',               price: 7.99,  description: "Ask at the till for today's special. Served with house salad or chips" },
 
       { group: 'Mini Pides', groupNote: 'Freshly baked, with house salad or chips', name: 'Minced Meat & Egg Pide', price: 11.95, description: 'Minced meat, pepper, onion, herbs and egg' },
