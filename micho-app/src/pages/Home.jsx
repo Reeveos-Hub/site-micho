@@ -118,7 +118,7 @@ const homePageSchema = {
       name: 'What are the opening hours at Micho Turkish Bar & Grill?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Micho is open Monday and Wednesday to Saturday from 12pm to 11pm, and Sunday from 12pm to 9pm. Closed on Tuesdays.',
+        text: 'Micho is open Monday and Wednesday to Saturday from 12pm to 11pm, and Sunday from 12pm to 9pm. Closed on Tuesdays. Brunch is served from 12pm to 4pm and the full menu from 4pm.',
       },
     },
     {

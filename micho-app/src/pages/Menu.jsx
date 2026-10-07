@@ -259,6 +259,10 @@ export default function Menu() {
         </span>
       </motion.div>
 
+      <p className="max-w-screen-md mx-auto px-6 pb-2 font-sans text-sm text-text-muted">
+        Brunch is served 12pm–4pm. The rest of the menu is served from 4pm.
+      </p>
+
       {/* Menu sections */}
       <div className="pt-4">
         {categories.map((cat) => (

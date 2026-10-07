@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'What are your collection hours?',
-    a: 'Collection is available during all our opening hours: Monday and Wednesday–Saturday 12pm–11pm, Sunday 12pm–9pm. We are closed on Tuesdays.',
+    a: 'Collection is available from 4pm, when our full menu starts (brunch is dine-in only): Monday and Wednesday–Saturday 4pm–11pm, Sunday 4pm–9pm. We are closed on Tuesdays.',
   },
   {
     q: 'Do you offer delivery?',
@@ -310,7 +310,7 @@ export default function Collection() {
             15% off all collection orders
           </p>
           <p className="font-sans text-text-muted text-base mb-10">
-            Mon, Wed–Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
+            Mon, Wed–Sat 4pm–11pm &nbsp;·&nbsp; Sun 4pm–9pm &nbsp;·&nbsp; Tue Closed
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+441143492043" className="btn-copper inline-block">

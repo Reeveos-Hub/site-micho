@@ -126,6 +126,7 @@ export default function Footer() {
                   { d: 'Wed–Sat', h: '12pm–11pm' },
                   { d: 'Sun', h: '12pm–9pm' },
                   { d: 'Brunch', h: '12pm–4pm' },
+                  { d: 'Full menu', h: 'from 4pm' },
                 ].map((row) => (
                 <div key={row.d} className="flex items-center gap-3">
                   <span className="font-sans text-xs font-semibold uppercase tracking-label text-text-muted">{row.d}</span>
