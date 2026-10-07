@@ -342,7 +342,7 @@ export default function JournalPost() {
                     200 Crookes, Sheffield S10 1TG
                   </p>
                   <p className="font-sans text-xs text-text-muted mb-5 leading-relaxed">
-                    Mon, Wed–Fri from 4pm. Sat–Sun from 12pm. Closed Tuesdays.
+                    Mon, Wed–Sun from 12pm. Brunch 12pm–4pm. Closed Tuesdays.
                   </p>
                   <a
                     href={BOOKING_URL}
@@ -364,13 +364,13 @@ export default function JournalPost() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent-copper mb-3">Opening hours</p>
                   <div className="space-y-1.5">
                     {[
-                      ['Monday', '4pm – late'],
+                      ['Monday', '12pm – 11pm'],
                       ['Tuesday', 'Closed'],
-                      ['Wednesday', '4pm – late'],
-                      ['Thursday', '4pm – late'],
-                      ['Friday', '4pm – late'],
-                      ['Saturday', '12pm – late'],
-                      ['Sunday', '12pm – late'],
+                      ['Wednesday', '12pm – 11pm'],
+                      ['Thursday', '12pm – 11pm'],
+                      ['Friday', '12pm – 11pm'],
+                      ['Saturday', '12pm – 11pm'],
+                      ['Sunday', '12pm – 9pm'],
                     ].map(([day, time]) => (
                       <div key={day} className="flex justify-between items-center">
                         <span className="font-sans text-xs text-text-muted">{day}</span>

@@ -121,12 +121,11 @@ export default function Footer() {
           <div className="py-8 border-b border-text-primary/5 overflow-x-auto">
             <div className="flex gap-6 min-w-max">
                 {[
-                  { d: 'Mon', h: '4pm–11pm' },
+                  { d: 'Mon', h: '12pm–11pm' },
                   { d: 'Tue', h: 'Closed' },
-                  { d: 'Wed–Thu', h: '4pm–11pm' },
-                  { d: 'Fri', h: '4pm–11pm' },
-                  { d: 'Sat', h: '12pm–11pm' },
+                  { d: 'Wed–Sat', h: '12pm–11pm' },
                   { d: 'Sun', h: '12pm–9pm' },
+                  { d: 'Brunch', h: '12pm–4pm' },
                 ].map((row) => (
                 <div key={row.d} className="flex items-center gap-3">
                   <span className="font-sans text-xs font-semibold uppercase tracking-label text-text-muted">{row.d}</span>

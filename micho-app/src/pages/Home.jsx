@@ -118,7 +118,15 @@ const homePageSchema = {
       name: 'What are the opening hours at Micho Turkish Bar & Grill?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Micho is open Monday, Wednesday, Thursday and Friday from 4pm to 11pm. Saturday from 12pm to 11pm, Sunday from 12pm to 9pm. Closed on Tuesdays.',
+        text: 'Micho is open Monday and Wednesday to Saturday from 12pm to 11pm, and Sunday from 12pm to 9pm. Closed on Tuesdays.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Micho serve brunch in Sheffield?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Micho serves a Turkish brunch menu from 12pm to 4pm, Monday and Wednesday to Sunday (closed Tuesdays). It includes the Micho Breakfast, eggs and classics such as menemen and sucuk and eggs, brunch wraps and freshly baked mini pides. Brunch is ordered and paid for at the till.',
       },
     },
     {

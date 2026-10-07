@@ -35,7 +35,7 @@ export const posts = [
     faq: [
       { q: "Where exactly is Micho in Sheffield?", a: "We are at 200 Crookes, Sheffield, S10 1TG. The number 51 bus runs from the city centre and takes around 20 minutes. By car, head north-west from the city along Crookes Valley Road." },
       { q: "Do I need to book a table?", a: "For Friday and Saturday evenings, yes. Walk-ins are welcome at quieter times but weekend evenings fill quickly. Call +44 114 349 2043 or book online." },
-      { q: "What days and times is Micho open?", a: "Monday, Wednesday, Thursday and Friday from 4pm. Saturday and Sunday from 12pm. Closed Tuesdays." },
+      { q: "What days and times is Micho open?", a: "Monday and Wednesday to Saturday from 12pm to 11pm, and Sunday from 12pm to 9pm. Brunch is served from 12pm to 4pm. Closed Tuesdays." },
       { q: "Why is a great Turkish restaurant in a residential neighbourhood?", a: "Because a residential neighbourhood filters out the casual visitor. Every table at Micho has made a deliberate decision to be there. That filter, a street that requires intent to find, is what keeps the standard where it is." }
     ],
     related: ['25-years-behind-the-grill', 'saturday-in-crookes']

@@ -30,9 +30,7 @@ const localBusinessSchema = {
     longitude: -1.496,
   },
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Wednesday', 'Thursday'], opens: '16:00', closes: '23:00' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Friday'], opens: '16:00', closes: '23:00' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '12:00', closes: '23:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '12:00', closes: '23:00' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Sunday'], opens: '12:00', closes: '21:00' },
   ],
   servesCuisine: ['Turkish', 'Mediterranean', 'Bar food'],
