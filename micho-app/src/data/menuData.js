@@ -6,6 +6,37 @@
 
 export const menuData = {
 
+  // ─── BRUNCH (12pm–4pm, dine-in; unnumbered so dinner item numbers stay stable) ─
+  'Brunch': {
+    image: '/food-pide.png',
+    note: 'Served 12pm–4pm, Monday and Wednesday to Sunday (closed Tuesdays). Order and pay at the till and please quote your table number. Please speak to staff about allergens or dietary requirements before ordering. Our food may contain or come into contact with allergens.',
+    items: [
+      { name: 'Micho Breakfast', price: 14.95, description: 'Two poached eggs on shakshuka base, grilled Turkish sucuk, feta, mixed olives, house salad, homemade jam, honey with yoghurt and walnut, tahini with molasses, sigara borek and warm Micho bread' },
+
+      { group: 'Eggs & Classics', name: 'Menemen', price: 9.95, tags: ['V'], description: 'Eggs cooked with tomatoes, peppers, onions and herbs, served with warm Micho bread. Add feta £1.50 | sucuk £2.50 | halloumi £2.50' },
+      { name: 'Sucuk & Eggs',                 price: 10.95, description: 'Grilled Turkish beef sucuk with two fried eggs and warm Micho bread' },
+      { name: 'Micho Shakshuka Eggs',         price: 10.95, tags: ['V'], description: 'Aubergine and tomato shakshuka topped with two poached eggs, fresh herbs and warm Micho bread' },
+      { name: 'Mushroom & Halloumi Eggs',     price: 11.95, tags: ['V'], description: 'Garlic-butter mushrooms, grilled halloumi, two poached eggs and warm Micho bread' },
+      { name: 'Meaty Egg',                    price: 11.95, description: 'Minced meat, eggs, onions and spices, served with warm Micho bread' },
+      { name: 'Halloumi & Avocado Eggs',      price: 11.95, tags: ['V'], description: 'Grilled halloumi, avocado, two poached eggs, seasoning and warm Micho bread' },
+      { name: 'Falafel & Halloumi Brunch Bowl', price: 10.95, tags: ['V'], description: 'Falafel, grilled halloumi, hummus, avocado, olives, herbs and pomegranate dressing' },
+      { name: 'Extra Micho Bread',            price: 2.00,  description: '' },
+
+      { group: 'Brunch Wraps', groupNote: 'Warm flatbread or Micho bread, with your choice of house salad or chips', name: 'Charcoal Chicken Wrap', price: 11.95, description: 'Charcoal-grilled chicken, lettuce, onion and Micho house sauce' },
+      { name: 'Adana Wrap',                   price: 11.95, description: 'Adana kebab, onion, lettuce and house sauce' },
+      { name: 'Halloumi & Avocado Wrap',      price: 10.95, tags: ['V'],  description: 'Grilled halloumi, avocado, lettuce, onion, cucumber and house chilli' },
+      { name: 'Falafel & Hummus Wrap',        price: 9.95,  tags: ['VG'], description: 'Falafel, hummus, lettuce, onion, cucumber and tahini-style dressing' },
+      { name: 'Daily Sandwich',               price: 7.99,  description: "Ask at the till for today's special. Served with house salad or chips" },
+
+      { group: 'Mini Pides', groupNote: 'Freshly baked, with house salad or chips', name: 'Minced Meat & Egg Pide', price: 11.95, description: 'Minced meat, pepper, onion, herbs and egg' },
+      { name: 'Sucuk & Egg Mini Pide',        price: 11.95, description: 'Turkish sucuk, cheese and baked egg' },
+      { name: 'Chicken & Cheese Mini Pide',   price: 11.95, description: 'Charcoal-grilled chicken, peppers and melted cheese' },
+      { name: 'Spinach & Feta Mini Pide',     price: 10.95, tags: ['V'], description: 'Spinach, feta, herbs and melted cheese' },
+      { name: 'Halloumi & Vegetable Mini Pide', price: 10.95, tags: ['V'], description: 'Halloumi, peppers, onion and herbs' },
+      { name: 'Meat Feast Mini Pide',         price: 11.95, description: 'Minced meat, sucuk and chicken with mozzarella' },
+    ],
+  },
+
   // ─── COLD STARTERS ────────────────────────────────────────────────────────
   'Cold Starters': {
     image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80',

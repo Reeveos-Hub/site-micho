@@ -85,7 +85,15 @@ function MenuSection({ category, data }) {
         </ScrollReveal>
         <div>
           {data.items.map((item, i) => (
-            <MenuItem key={i} item={item} index={i} />
+            <React.Fragment key={i}>
+              {item.group && (
+                <div className="mt-10 mb-2">
+                  <h3 className="font-serif font-light text-2xl text-accent-copper">{item.group}</h3>
+                  {item.groupNote && <p className="font-sans text-text-muted text-sm italic mt-1">{item.groupNote}</p>}
+                </div>
+              )}
+              <MenuItem item={item} index={i} />
+            </React.Fragment>
           ))}
         </div>
       </div>
@@ -143,7 +151,11 @@ const menuSchema = {
   name: 'Micho Full Menu',
   url: `${BASE_URL}/menu`,
   inLanguage: 'en-GB',
-  hasMenuSection: categories.map(name => ({ '@type': 'MenuSection', name })),
+  hasMenuSection: categories.map(name => ({
+    '@type': 'MenuSection',
+    name,
+    ...(menuData[name].note && { description: menuData[name].note }),
+  })),
 }
 
 export default function Menu() {
@@ -188,7 +200,7 @@ export default function Menu() {
     >
       <SEO
           title="Menu | Micho Turkish Bar &amp; Grill Sheffield"
-          description="Explore Micho's full menu: charcoal-grilled kebabs, fresh meze, pide, sides, desserts and drinks. Premium ingredients, traditional Turkish recipes."
+          description="Explore Micho's full menu: Turkish brunch (12pm–4pm), charcoal-grilled kebabs, fresh meze, pide, sides, desserts and drinks. Premium ingredients, traditional Turkish recipes."
           canonical="/menu"
           pageSchema={menuSchema}
         />

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { X } from 'lucide-react'
 
 const SESSION_KEY = 'micho_promo_dismissed'
-const BOOKING_URL = 'https://web.dojo.app/create_booking/vendor/IMRbX5h6TDitS4ia5XT3HxTvOdSiYmbC-xwiQb1-icM_restaurant'
 
 export default function PromoBanner() {
   const [visible, setVisible] = useState(false)
@@ -39,10 +39,10 @@ export default function PromoBanner() {
         >
           <p className="font-sans text-sm text-text-muted flex-1 min-w-0">
             <span className="text-accent-copper font-semibold">New: </span>
-            Citir Beyti — our signature minced meat wrap with yogurt & tomato sauce.{' '}
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={dismiss} className="text-accent-copper underline hover:text-accent-gold transition-colors">
-              Book your table →
-            </a>
+            Our brunch menu is here, served 12pm–4pm daily except Tuesdays.{' '}
+            <Link to="/menu" onClick={dismiss} className="text-accent-copper underline hover:text-accent-gold transition-colors">
+              See the brunch menu →
+            </Link>
           </p>
           <button
             onClick={dismiss}

@@ -10,9 +10,9 @@ const IMG_PACK1 = 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?
 const IMG_PACK2 = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80'
 const IMG_PACK3 = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80'
 
-// Only show food categories, not drinks
+// Only show food categories, not drinks. Brunch is dine-in (order at the till), so it is not offered for collection.
 const drinkCategories = ['Cocktails', 'Mocktails', 'Spritz', 'Wine', 'Beers & Ciders', 'Spirits', 'Raki', 'Soft Drinks', 'Hot Drinks', 'Iced Coffee']
-const foodCategories = categories.filter(cat => !drinkCategories.includes(cat))
+const foodCategories = categories.filter(cat => !drinkCategories.includes(cat) && cat !== 'Brunch')
 
 const faqs = [
   {
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'What are your collection hours?',
-    a: 'Collection is available during all our opening hours: Monday, Wednesday–Thursday 4pm–11pm, Friday 4pm–11pm, Saturday 12pm–11pm, Sunday 12pm–9pm. We are closed on Tuesdays.',
+    a: 'Collection is available during all our opening hours: Monday and Wednesday–Saturday 12pm–11pm, Sunday 12pm–9pm. We are closed on Tuesdays.',
   },
   {
     q: 'Do you offer delivery?',
@@ -310,7 +310,7 @@ export default function Collection() {
             15% off all collection orders
           </p>
           <p className="font-sans text-text-muted text-base mb-10">
-            Mon, Wed–Thu 4pm–11pm &nbsp;·&nbsp; Fri 4pm–11pm &nbsp;·&nbsp; Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
+            Mon, Wed–Sat 12pm–11pm &nbsp;·&nbsp; Sun 12pm–9pm &nbsp;·&nbsp; Tue Closed
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+441143492043" className="btn-copper inline-block">
