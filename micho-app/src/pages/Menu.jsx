@@ -200,7 +200,7 @@ export default function Menu() {
     >
       <SEO
           title="Menu | Micho Turkish Bar &amp; Grill Sheffield"
-          description="Explore Micho's full menu: Turkish brunch (12pm–4pm), charcoal-grilled kebabs, fresh meze, pide, sides, desserts and drinks. Premium ingredients, traditional Turkish recipes."
+          description="Explore Micho's full menu: Turkish brunch (Friday to Sunday, 12pm–6pm), charcoal-grilled kebabs, fresh meze, pide, sides, desserts and drinks. Premium ingredients, traditional Turkish recipes."
           canonical="/menu"
           pageSchema={menuSchema}
         />
@@ -260,7 +260,7 @@ export default function Menu() {
       </motion.div>
 
       <p className="max-w-screen-md mx-auto px-6 pb-2 font-sans text-sm text-text-muted">
-        Brunch is served 12pm–4pm. The rest of the menu is served from 4pm.
+        Brunch is served 12pm–6pm, Friday to Sunday. The rest of the menu is served from 4pm on Monday, Wednesday and Thursday, and from 6pm Friday to Sunday.
       </p>
 
       {/* Menu sections */}

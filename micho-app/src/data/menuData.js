@@ -6,10 +6,10 @@
 
 export const menuData = {
 
-  // ─── BRUNCH (12pm–4pm, dine-in; unnumbered so dinner item numbers stay stable) ─
+  // ─── BRUNCH (Fri–Sun 12pm–6pm, dine-in; unnumbered so dinner item numbers stay stable) ─
   'Brunch': {
     image: '/food-pide.png',
-    note: 'Served 12pm–4pm, Monday and Wednesday to Sunday (closed Tuesdays). Order and pay at the till and please quote your table number. Please speak to staff about allergens or dietary requirements before ordering. Our food may contain or come into contact with allergens.',
+    note: 'Served 12pm–6pm, Friday to Sunday only. Order and pay at the till and please quote your table number. Please speak to staff about allergens or dietary requirements before ordering. Our food may contain or come into contact with allergens.',
     items: [
       { name: 'Micho Breakfast', price: 14.95, description: 'Two poached eggs on shakshuka base, grilled Turkish sucuk, feta, mixed olives, house salad, homemade jam, honey with yoghurt and walnut, tahini with molasses, sigara borek and warm Micho bread' },
 

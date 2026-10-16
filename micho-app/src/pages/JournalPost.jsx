@@ -342,7 +342,7 @@ export default function JournalPost() {
                     200 Crookes, Sheffield S10 1TG
                   </p>
                   <p className="font-sans text-xs text-text-muted mb-5 leading-relaxed">
-                    Mon, Wed–Sun from 12pm. Brunch 12pm–4pm. Closed Tuesdays.
+                    Mon, Wed–Thu from 4pm. Fri–Sun from 12pm. Brunch Fri–Sun 12pm–6pm. Closed Tuesdays.
                   </p>
                   <a
                     href={BOOKING_URL}
@@ -364,10 +364,10 @@ export default function JournalPost() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent-copper mb-3">Opening hours</p>
                   <div className="space-y-1.5">
                     {[
-                      ['Monday', '12pm – 11pm'],
+                      ['Monday', '4pm – 11pm'],
                       ['Tuesday', 'Closed'],
-                      ['Wednesday', '12pm – 11pm'],
-                      ['Thursday', '12pm – 11pm'],
+                      ['Wednesday', '4pm – 11pm'],
+                      ['Thursday', '4pm – 11pm'],
                       ['Friday', '12pm – 11pm'],
                       ['Saturday', '12pm – 11pm'],
                       ['Sunday', '12pm – 9pm'],

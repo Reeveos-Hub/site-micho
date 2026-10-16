@@ -39,7 +39,7 @@ export default function PromoBanner() {
         >
           <p className="font-sans text-sm text-text-muted flex-1 min-w-0">
             <span className="text-accent-copper font-semibold">New: </span>
-            Our brunch menu is here, served 12pm–4pm daily except Tuesdays.{' '}
+            Our brunch menu is here, served Friday to Sunday, 12pm–6pm.{' '}
             <Link to="/menu" onClick={dismiss} className="text-accent-copper underline hover:text-accent-gold transition-colors">
               See the brunch menu →
             </Link>
