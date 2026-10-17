@@ -260,7 +260,7 @@ export default function Menu() {
       </motion.div>
 
       <p className="max-w-screen-md mx-auto px-6 pb-2 font-sans text-sm text-text-muted">
-        Brunch is served 12pm–6pm, Friday to Sunday. The rest of the menu is served from 4pm on Monday, Wednesday and Thursday, and from 6pm Friday to Sunday.
+        Brunch is served 12pm–6pm, Friday to Sunday. The rest of the menu is served from 4pm on Monday, Wednesday and Thursday, and from 6pm Friday to Sunday. The main menu is also available on request.
       </p>
 
       {/* Menu sections */}
